@@ -217,3 +217,697 @@
       padding: 0.9rem 1rem;
       border-radius: 1rem;
       background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.28), transparent 55%),
+      rgba(15, 23, 42, 0.96);
+      border: 1px solid rgba(55, 65, 81, 0.95);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
+    }
+
+    .hero-side h2 {
+      font-size: 1rem;
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .chip {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: var(--chip-bg);
+      border: 1px solid var(--chip-border);
+      color: var(--text-muted);
+    }
+
+    .kv-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.4rem 0 0.75rem;
+      font-size: 0.82rem;
+    }
+
+    .kv-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.2rem 0;
+      border-bottom: 1px dashed rgba(31, 41, 55, 0.8);
+    }
+
+    .kv-label {
+      color: var(--text-muted);
+      font-size: 0.78rem;
+    }
+
+    .kv-value {
+      font-weight: 500;
+    }
+
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid rgba(75, 85, 99, 0.85);
+      background: rgba(15, 23, 42, 0.92);
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    .btn-link.primary {
+      border-color: rgba(79, 70, 229, 0.9);
+      background: linear-gradient(to right, rgba(79, 70, 229, 0.9), rgba(147, 51, 234, 0.85));
+    }
+
+    .btn-link.primary:hover {
+      filter: brightness(1.05);
+    }
+
+    .btn-link:hover {
+      text-decoration: none;
+      border-color: rgba(148, 163, 184, 0.9);
+    }
+
+    main {
+      margin-top: 0.75rem;
+    }
+
+    section {
+      margin: 1.5rem 0;
+      padding: 1.15rem 1.1rem;
+      border-radius: 0.9rem;
+      background: rgba(15, 23, 42, 0.96);
+      border: 1px solid rgba(31, 41, 55, 0.95);
+    }
+
+    section:nth-of-type(2n) {
+      background: rgba(12, 20, 38, 0.96);
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: baseline;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-kicker {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .section-title {
+      font-size: 1.2rem;
+      margin: 0.05rem 0 0.35rem;
+    }
+
+    .criteria-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      font-size: 0.72rem;
+    }
+
+    .criteria-badges span {
+      border-radius: 999px;
+      padding: 0.15rem 0.55rem;
+      background: var(--accent-soft);
+      border: 1px solid rgba(79, 70, 229, 0.4);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #c7d2fe;
+    }
+
+    h3 {
+      margin-top: 0.9rem;
+      margin-bottom: 0.15rem;
+      font-size: 0.98rem;
+    }
+
+    p {
+      margin: 0.15rem 0 0.45rem;
+      font-size: 0.86rem;
+      color: #e5e7eb;
+    }
+
+    ul {
+      margin: 0.2rem 0 0.6rem 1.2rem;
+      padding-left: 0.3rem;
+      font-size: 0.86rem;
+      color: #e5e7eb;
+    }
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+
+    .artefact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.35rem;
+    }
+
+    .artefact-links a {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(55, 65, 81, 0.9);
+    }
+
+    .artefact-links a:hover {
+      border-color: rgba(148, 163, 184, 0.9);
+      text-decoration: none;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.35rem 0 0;
+      font-size: 0.86rem;
+    }
+
+    .contact-list li {
+      margin-bottom: 0.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0 0.5rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    code {
+      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.8rem;
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: 0.35rem;
+      padding: 0.08rem 0.3rem;
+      border: 1px solid rgba(31, 41, 55, 0.9);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <div class="nav-title">Ibrahim Akinyera</div>
+      <div class="nav-subtitle">Data Scientist • Tech Founder • Digital Transformation Leader</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#evidence-1">Evidence 1</a></li>
+        <li><a href="#evidence-2">Evidence 2</a></li>
+        <li><a href="#evidence-3">Evidence 3</a></li>
+        <li><a href="#evidence-4">Evidence 4</a></li>
+        <li><a href="#evidence-5">Evidence 5</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page">
+  <section id="overview" class="hero">
+    <div class="hero-main">
+      <div class="hero-pill">
+        Global Talent – Digital Technology
+        <span>Tech Nation route</span>
+      </div>
+      <h1>Ibrahim Akintunde Akinyera</h1>
+      <p class="hero-tagline">
+        Data Scientist and Founder of NxtAbroad Limited, building AI-driven tools for global education and migration.
+      </p>
+
+      <dl class="hero-grid">
+        <div>
+          <dt>Profile Snapshot</dt>
+          <dd>
+            MSc Data Science – Ulster University<br>
+            BSc Computer Science – Fountain University<br>
+            Founder &amp; Managing Director – NxtAbroad Limited<br>
+            Experience in healthcare tech, cyber security &amp; EdTech/immigration tech.
+          </dd>
+        </div>
+        <div>
+          <dt>Evidence Portfolio</dt>
+          <dd>
+            This page brings together my core evidence as a data scientist and tech founder,
+            demonstrating innovation, technical contribution and leadership in digital technology.
+          </dd>
+        </div>
+      </dl>
+
+      <div class="criteria-box">
+        <div class="criteria-title">Criteria Mapping</div>
+        <div class="criteria-tags">
+          <span>Mandatory – Proven track record of innovation &amp; impact</span>
+        </div>
+        <div class="criteria-tags" style="margin-top: 0.25rem;">
+          <span>Optional 1 – Founder of a product-led digital tech company (NxtAbroad AI)</span>
+          <span>Optional 2 – Contributions to tech ecosystem, tools, mentoring &amp; content</span>
+        </div>
+      </div>
+    </div>
+
+    <aside class="hero-side">
+      <h2>Quick Links</h2>
+      <div class="chip-row">
+        <span class="chip">AI &amp; ML</span>
+        <span class="chip">Product-Led Founder</span>
+        <span class="chip">EdTech &amp; Immigration Tech</span>
+        <span class="chip">Healthcare Data</span>
+      </div>
+
+      <ul class="kv-list">
+        <li>
+          <span class="kv-label">CV</span>
+          <span class="kv-value"><a href="CV.pdf" target="_blank" rel="noopener">Download CV (PDF)</a></span>
+        </li>
+        <li>
+          <span class="kv-label">GitHub</span>
+          <span class="kv-value"><a href="https://github.com/akinyeraakintunde" target="_blank" rel="noopener">github.com/akinyeraakintunde</a></span>
+        </li>
+        <li>
+          <span class="kv-label">LinkedIn</span>
+          <span class="kv-value"><a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noopener">linkedin.com/in/ibrahimakinyera</a></span>
+        </li>
+      </ul>
+
+      <div class="link-row">
+        <a class="btn-link primary" href="#evidence-1">View Evidence 1</a>
+        <a class="btn-link" href="#contact">Contact</a>
+      </div>
+    </aside>
+  </section>
+
+  <main>
+    <!-- Evidence 1 -->
+    <section id="evidence-1">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Evidence 1</div>
+          <h2 class="section-title">NxtAbroad AI – AI-Driven EdTech &amp; Immigration Platform</h2>
+        </div>
+        <div class="criteria-badges">
+          <span>Mandatory</span>
+          <span>Optional 1</span>
+          <span>Optional 2</span>
+        </div>
+      </div>
+
+      <p>
+        NxtAbroad AI is a product-led platform I am building within NxtAbroad Limited to transform how African
+        students and professionals plan and execute global education and migration journeys. It combines rules,
+        automation and machine learning to make eligibility, programme choice and document preparation more accurate,
+        transparent and scalable.
+      </p>
+
+      <h3>Problem &amp; Vision</h3>
+      <p>
+        Accessing global education routes is complex and error-prone. Applicants often lose opportunities due to
+        unclear eligibility, weak programme choice or poorly prepared financial documents. At NxtAbroad Limited,
+        I see these issues daily across the UK, Canada, Ireland and other destinations.
+      </p>
+      <p>
+        NxtAbroad AI is my response: a productised platform that encodes visa rules, funding logic and programme
+        constraints into reusable software, tailored to African applicants and their documentation patterns.
+      </p>
+
+      <h3>My Role</h3>
+      <ul>
+        <li><strong>Founder &amp; Product Owner:</strong> Conceived NxtAbroad AI from real client pain points.</li>
+        <li><strong>System Architect:</strong> Designed the core architecture, data model and user journeys.</li>
+        <li><strong>Lead Developer (MVP):</strong> Implementing backend logic, automation scripts and prototype tools.</li>
+        <li><strong>Business Lead:</strong> Defined commercial model, partnerships and roadmap for B2B expansion.</li>
+      </ul>
+
+      <h3>Core Capabilities (Roadmap)</h3>
+      <ul>
+        <li>Intelligent profile intake with validation for academic, financial and preference data.</li>
+        <li>Eligibility assessment engine for study and visa routes (starting with UK &amp; Canada).</li>
+        <li>Programme and university recommendation engine based on constraints and goals.</li>
+        <li>Document generation (sponsorship letters, financial breakdowns, SOP structures, checklists).</li>
+        <li>Internal &amp; partner dashboards for pipeline tracking and performance analytics.</li>
+      </ul>
+
+      <h3>Concrete Implementation: Visa Readiness Scoring Engine</h3>
+      <p>
+        As a concrete part of NxtAbroad AI, I designed and built an internal
+        <strong>Visa Readiness Scoring Engine</strong> – a machine-learning model that predicts whether a student
+        application is <em>Ready</em>, <em>Medium Risk</em> or <em>High Risk</em> before submission.
+      </p>
+      <ul>
+        <li>
+          Structured feature schema covering demographics, course choice, finance, visa history, study gaps,
+          English language scores and documentation quality.
+        </li>
+        <li>
+          Synthetic but realistic training data generated in Python to protect client privacy while encoding
+          real-world patterns from NxtAbroad’s operations.
+        </li>
+        <li>
+          End-to-end ML pipeline using scikit-learn (preprocessing + Random Forest classifier) saved as a reusable
+          model artefact.
+        </li>
+        <li>
+          Interactive Streamlit app so visa consultants can input applicant details and receive a readiness
+          prediction plus class probabilities:
+          <code>High Risk (0)</code>, <code>Medium Risk (1)</code>, <code>Ready (2)</code>.
+        </li>
+      </ul>
+      <p>
+        This engine turns my personal visa decision experience into a repeatable, explainable AI system, creating
+        a defensible technical asset at the core of NxtAbroad AI.
+      </p>
+
+      <h3>Technical Architecture (High-Level)</h3>
+      <p>The broader NxtAbroad AI platform is structured as a web front-end backed by modular backend services:</p>
+      <ul>
+        <li>User / Student → Web Frontend</li>
+        <li>Frontend → API Layer</li>
+        <li>API → Profile &amp; Application Database</li>
+        <li>API → Eligibility Rules Engine</li>
+        <li>API → Recommendation Engine (ML models, including visa readiness)</li>
+        <li>API → Document Generation &amp; Validation Service</li>
+        <li>Admin &amp; Partners → Dashboard using the same API</li>
+      </ul>
+
+      <h3>Innovation &amp; Impact</h3>
+      <ul>
+        <li>Encodes complex visa rules and funding logic into software instead of ad-hoc human judgment.</li>
+        <li>Designed around African applicants, whose financial and documentation patterns differ from Global North norms.</li>
+        <li>Reduces human error in high-stakes visa decisions via structured validation, templates and scoring.</li>
+        <li>Transforms a consultancy workflow into a product that can be licensed or white-labelled to other agents.</li>
+      </ul>
+
+      <h3>Status &amp; Roadmap</h3>
+      <ul>
+        <li>Python-based MVPs built for eligibility checks, document generation and visa readiness scoring.</li>
+        <li>Components already support internal NxtAbroad client files (letters, breakdowns, checklists).</li>
+        <li>Next 12–24 months: full web interface, partner dashboards, more destinations and outcome-based models.</li>
+      </ul>
+
+      <h3>Links &amp; Supporting Artefacts</h3>
+      <div class="artefact-links">
+        <a href="https://github.com/akinyeraakintunde/nxtabroad-ai-core" target="_blank" rel="noopener">
+          NxtAbroad AI Core – GitHub
+        </a>
+        <a href="https://github.com/akinyeraakintunde/nxtabroad-data-validation" target="_blank" rel="noopener">
+          NxtAbroad Data Validation Toolkit – GitHub
+        </a>
+        <a href="https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml" target="_blank" rel="noopener">
+          Visa Readiness Engine – GitHub
+        </a>
+        <a href="NxtAbroad-AI-Extended-Business-Plan.pdf" target="_blank" rel="noopener">
+          NxtAbroad AI Extended Business Plan (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- Evidence 2 -->
+    <section id="evidence-2">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Evidence 2</div>
+          <h2 class="section-title">Twitter Thematic Classification – MSc Data Science Dissertation</h2>
+        </div>
+        <div class="criteria-badges">
+          <span>Mandatory</span>
+          <span>Optional 2</span>
+        </div>
+      </div>
+
+      <p>
+        A machine-learning pipeline for classifying tweets into themes such as politics, health, sports and
+        entertainment, completed as part of my MSc Data Science dissertation.
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Twitter is a noisy but powerful signal of public sentiment. Manual monitoring is not scalable. This project
+        aimed to automatically classify tweets into clear thematic categories to support media monitoring, crisis
+        response and policy analysis.
+      </p>
+
+      <h3>My Role</h3>
+      <ul>
+        <li>Designed the end-to-end ML pipeline from data collection through to model evaluation.</li>
+        <li>Implemented preprocessing, feature engineering and several classifier baselines.</li>
+        <li>Analysed model performance across themes, documenting findings and limitations.</li>
+      </ul>
+
+      <h3>Technical Highlights</h3>
+      <ul>
+        <li>Python-based pipeline using pandas, scikit-learn and NLP libraries.</li>
+        <li>Text cleaning, tokenisation, TF–IDF vectorisation and feature selection.</li>
+        <li>Evaluation of multiple models (logistic regression, SVM, tree-based models).</li>
+        <li>Metrics including accuracy, F1-score by theme and confusion matrices.</li>
+      </ul>
+
+      <h3>Impact &amp; Relevance</h3>
+      <ul>
+        <li>Demonstrates ability to design and execute complex ML projects with real-world applicability.</li>
+        <li>Framework can be adapted to topic monitoring for brands, governments or NGOs.</li>
+        <li>Shows rigorous treatment of data, experimentation and reporting.</li>
+      </ul>
+
+      <h3>Links &amp; Supporting Artefacts</h3>
+      <div class="artefact-links">
+        <a href="https://github.com/akinyeraakintunde/twitter-topic-classifier" target="_blank" rel="noopener">
+          Twitter Topic Classifier – GitHub
+        </a>
+        <a href="MSc-Dissertation-Twitter-Thematic-Classification.pdf" target="_blank" rel="noopener">
+          Full MSc Dissertation (PDF)
+        </a>
+        <a href="Twitter-Classification-Notebook.html" target="_blank" rel="noopener">
+          Project Notebook (HTML)
+        </a>
+      </div>
+    </section>
+
+    <!-- Evidence 3 -->
+    <section id="evidence-3">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Evidence 3</div>
+          <h2 class="section-title">Hospital Readmission Risk Prediction – Clinical Data Project</h2>
+        </div>
+        <div class="criteria-badges">
+          <span>Mandatory</span>
+          <span>Optional 2</span>
+        </div>
+      </div>
+
+      <p>
+        Predictive modelling using clinical and demographic data to estimate the risk of hospital readmission for
+        diabetic patients.
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Hospital readmissions are costly and can indicate poor quality of care. The goal of this project was to
+        predict readmission risk in diabetic patients using structured clinical data, enabling better follow-up and
+        resource planning.
+      </p>
+
+      <h3>My Role</h3>
+      <ul>
+        <li>Prepared and cleaned a large clinical dataset of diabetes-related admissions.</li>
+        <li>Engineered features and handled class imbalance and missing data.</li>
+        <li>Trained and evaluated multiple ML models and interpreted the key predictors.</li>
+      </ul>
+
+      <h3>Technical Highlights</h3>
+      <ul>
+        <li>Extensive use of Python, pandas, scikit-learn and model selection techniques.</li>
+        <li>Feature engineering for diagnoses, procedures, medications and demographics.</li>
+        <li>Evaluation using AUROC, precision/recall and cost-sensitive comparisons.</li>
+        <li>Discussion of fairness, bias and practical deployment considerations.</li>
+      </ul>
+
+      <h3>Impact &amp; Relevance</h3>
+      <ul>
+        <li>Demonstrates ability to handle sensitive, high-stakes data responsibly.</li>
+        <li>Approach generalises to risk prediction in other healthcare and operational domains.</li>
+        <li>Shows strong understanding of the end-to-end ML lifecycle.</li>
+      </ul>
+
+      <h3>Links &amp; Supporting Artefacts</h3>
+      <div class="artefact-links">
+        <a href="https://github.com/akinyeraakintunde/hospital-readmission-ml" target="_blank" rel="noopener">
+          Hospital Readmission ML – GitHub
+        </a>
+        <a href="https://akinyeraakintunde.github.io/Diabetes-Readmission-Project" target="_blank" rel="noopener">
+          Project Page – Diabetes Readmission
+        </a>
+        <a href="Diabetes-Readmission-Report.pdf" target="_blank" rel="noopener">
+          Project Report / Slides (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- Evidence 4 -->
+    <section id="evidence-4">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Evidence 4</div>
+          <h2 class="section-title">Data Validation Toolkit &amp; Operational Automation at NxtAbroad</h2>
+        </div>
+        <div class="criteria-badges">
+          <span>Mandatory</span>
+          <span>Optional 1</span>
+          <span>Optional 2</span>
+        </div>
+      </div>
+
+      <p>
+        A Python-based toolkit and set of digital processes to reduce errors in visa and admission workflows at
+        NxtAbroad Limited.
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Visa and admission workflows involve many repetitive checks on critical data (names, dates, amounts,
+        account details). Manual checking is slow and prone to human error, which can lead to refusals and delays.
+      </p>
+
+      <h3>My Role</h3>
+      <ul>
+        <li>Designed and implemented a Python toolkit used internally at NxtAbroad.</li>
+        <li>Codified validation rules for spreadsheets and document inputs.</li>
+        <li>Integrated these checks into day-to-day operations and staff SOPs.</li>
+      </ul>
+
+      <h3>Technical Highlights</h3>
+      <ul>
+        <li>Reusable validation functions for CSV/Excel files using pandas.</li>
+        <li>Rules for missing/invalid values, date ranges, numeric thresholds and consistency checks.</li>
+        <li>Logging of errors and warnings for review before submission.</li>
+        <li>Designed as a foundation for a standalone validation microservice within NxtAbroad AI.</li>
+      </ul>
+
+      <h3>Operational Impact</h3>
+      <ul>
+        <li>Standardised checks across consultants, reducing variation and oversights.</li>
+        <li>Improved internal quality control before documents are submitted to institutions and embassies.</li>
+        <li>Shows practical application of engineering skills inside a real business context.</li>
+      </ul>
+
+      <h3>Links &amp; Supporting Artefacts</h3>
+      <div class="artefact-links">
+        <a href="https://github.com/akinyeraakintunde/nxtabroad-data-validation" target="_blank" rel="noopener">
+          NxtAbroad Data Validation Toolkit – GitHub
+        </a>
+        <a href="NxtAbroad-SOPs-Automation-Overview.pdf" target="_blank" rel="noopener">
+          NxtAbroad SOPs &amp; Automation Overview (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- Evidence 5 -->
+    <section id="evidence-5">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Evidence 5</div>
+          <h2 class="section-title">Leadership, Mentoring &amp; Ecosystem Contributions</h2>
+        </div>
+        <div class="criteria-badges">
+          <span>Mandatory</span>
+          <span>Optional 2</span>
+        </div>
+      </div>
+
+      <p>
+        Founder-led team management, mentoring of applicants and knowledge-sharing across education and migration tech.
+      </p>
+
+      <h3>Founder &amp; Team Leadership</h3>
+      <ul>
+        <li>Founder &amp; Managing Director of NxtAbroad Limited.</li>
+        <li>Responsible for strategy, hiring, training and performance management.</li>
+        <li>Implemented digital tools and SOPs for visa consultants and digital marketers.</li>
+      </ul>
+
+      <h3>Mentoring &amp; Education</h3>
+      <ul>
+        <li>Mentors students and professionals on programme selection, funding and visa strategy.</li>
+        <li>Provides structured templates for sponsorship letters, financial planning and documentation.</li>
+        <li>Shares insights on study-abroad and immigration processes through sessions and content.</li>
+      </ul>
+
+      <h3>Tech &amp; Cyber Security Contribution</h3>
+      <ul>
+        <li>Contributed to cyber security and digital process improvements at Connected Health (Northern Ireland).</li>
+        <li>Part of the internal team supporting work towards Cyber Essentials certification.</li>
+        <li>Helped translate operational requirements into practical security and data-handling changes.</li>
+      </ul>
+
+      <h3>Public Presence &amp; Documentation</h3>
+      <ul>
+        <li>Maintains a public GitHub portfolio of data and product projects.</li>
+        <li>Developing written guides on visa and education planning.</li>
+        <li>Positioning NxtAbroad AI as a platform that can support other agents and practitioners.</li>
+      </ul>
+
+      <h3>Links &amp; Supporting Artefacts</h3>
+      <div class="artefact-links">
+        <a href="https://nxtabroad.com" target="_blank" rel="noopener">NxtAbroad Limited – Company Website</a>
+        <a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noopener">LinkedIn Profile</a>
+        <a href="Leadership-Mentoring-Evidence-Pack.pdf" target="_blank" rel="noopener">
+          Leadership &amp; Mentoring Evidence Pack (PDF)
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">Contact &amp; Final Notes</div>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+      </div>
+
+      <p>
+        If you are reviewing my Global Talent application or would like further technical detail on any project,
+        please feel free to contact me.
+      </p>
+
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:Akinyera.akintunde@gmail.com">Akinyera.akintunde@gmail.com</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/akinyeraakintunde" target="_blank" rel="noopener">
+          github.com/akinyeraakintunde</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noopener">
+          linkedin.com/in/ibrahimakinyera</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © Ibrahim Akintunde Akinyera. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>
