@@ -2,35 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ibrahim Akinyera – Global Talent Evidence Portfolio</title>
+  <title>Ibrahim Akinyera – Global Talent Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-        content="Evidence portfolio for Ibrahim Akintunde Akinyera – Data Scientist, Tech Founder and Digital Transformation Leader, for UK Global Talent (Tech Nation) route.">
-
+        content="Tech Nation Global Talent portfolio for Ibrahim Akintunde Akinyera – AI, Data Science and Cybersecurity.">
   <style>
     :root {
-      --bg: #0b1020;
-      --bg-alt: #111729;
-      --accent: #4f46e5;
-      --accent-soft: rgba(79, 70, 229, 0.12);
-      --text-main: #f9fafb;
-      --text-muted: #9ca3af;
-      --border-subtle: #1f2937;
-      --chip-bg: #111827;
-      --chip-border: #374151;
-      --badge-bg: #1e293b;
+      --bg: #0f172a;
+      --bg-alt: #020617;
+      --card: #0b1220;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #1f2937;
+      --danger: #f97373;
+      --radius: 10px;
+      --shadow: 0 18px 40px rgba(15, 23, 42, 0.7);
     }
 
     * {
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #1f2937 0, #020617 55%, #000 100%);
-      color: var(--text-main);
-      line-height: 1.6;
+      background: radial-gradient(circle at top left, #1d283a 0, #020617 55%, #000 100%);
+      color: var(--text);
+      scroll-behavior: smooth;
     }
 
     a {
@@ -45,895 +46,619 @@
     .page {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 1.5rem 1.25rem 3rem;
+      padding: 24px 16px 80px;
     }
 
     header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(14px);
-      background: linear-gradient(to bottom,
-      rgba(2, 6, 23, 0.95),
-      rgba(2, 6, 23, 0.82),
-      transparent);
-      border-bottom: 1px solid rgba(55, 65, 81, 0.35);
-    }
-
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0.75rem 1.25rem;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 1.5rem;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
     }
 
-    .nav-brand {
+    .brand {
       display: flex;
       flex-direction: column;
-      gap: 0.1rem;
+      gap: 4px;
     }
 
-    .nav-title {
-      font-weight: 650;
-      letter-spacing: 0.03em;
-      font-size: 1rem;
-    }
-
-    .nav-subtitle {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 0.75rem;
+    .brand h1 {
+      font-size: 1.35rem;
       margin: 0;
-      padding: 0;
+      letter-spacing: 0.04em;
+    }
+
+    .tagline {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
       flex-wrap: wrap;
-      justify-content: flex-end;
+      gap: 8px;
     }
 
     nav a {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 0.35rem 0.65rem;
+      font-size: 0.85rem;
+      padding: 6px 10px;
       border-radius: 999px;
-      border: 1px solid transparent;
-      color: var(--text-muted);
+      border: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.7);
     }
 
     nav a:hover {
-      border-color: rgba(156, 163, 175, 0.55);
-      color: #e5e7eb;
-      background: rgba(15, 23, 42, 0.9);
+      border-color: var(--accent);
+      background: rgba(56, 189, 248, 0.1);
       text-decoration: none;
     }
 
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
     .hero {
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
       display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
-      gap: 2.25rem;
-      align-items: flex-start;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 24px;
+      align-items: center;
+      padding: 24px;
+      border-radius: 20px;
+      background: radial-gradient(circle at top left, rgba(56,189,248,0.12), transparent 55%),
+                  linear-gradient(135deg, rgba(15,23,42,0.96), rgba(15,23,42,0.96));
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(148, 163, 184, 0.1);
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .hero-sub {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 0.98rem;
+    }
+
+    .hero-highlights {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 16px;
+      font-size: 0.9rem;
+    }
+
+    .hero-highlights li {
+      margin-bottom: 6px;
+    }
+
+    .hero-highlights li::before {
+      content: "• ";
+      color: var(--accent);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #020617;
+      font-weight: 600;
+      box-shadow: 0 14px 30px rgba(56,189,248,0.35);
+    }
+
+    .btn-primary:hover {
+      background: #0ea5e9;
+      text-decoration: none;
+    }
+
+    .btn-ghost {
+      border-color: var(--border);
+      background: rgba(15, 23, 42, 0.8);
+      color: var(--text);
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent);
+      text-decoration: none;
+    }
+
+    .hero-meta {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .hero-meta strong {
+      color: var(--text);
+    }
+
+    .hero-right {
+      border-radius: 18px;
+      border: 1px solid rgba(148,163,184,0.15);
+      padding: 14px 16px;
+      background: rgba(15,23,42,0.85);
+    }
+
+    .hero-right h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1rem;
+    }
+
+    .meta-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .meta-list li {
+      margin-bottom: 4px;
+    }
+
+    section {
+      padding: 20px 0 10px;
+      border-top: 1px solid rgba(31, 41, 55, 0.9);
+    }
+
+    section:first-of-type {
+      border-top: none;
+    }
+
+    section h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.3rem;
+    }
+
+    .section-intro {
+      font-size: 0.92rem;
+      color: var(--muted);
+      max-width: 780px;
+      margin-bottom: 16px;
+    }
+
+    .grid-two {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.4fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: rgba(15,23,42,0.85);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 16px 18px;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.6);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .pill {
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      background: rgba(15,23,42,0.9);
+      border: 1px solid rgba(148,163,184,0.35);
+      color: var(--muted);
+    }
+
+    .evidence-box {
+      margin-top: 8px;
+      border-radius: 14px;
+      border: 1px solid rgba(148,163,184,0.28);
+      background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(15,23,42,0.98));
+      padding: 14px 16px;
+      box-shadow: 0 14px 30px rgba(15,23,42,0.8);
+    }
+
+    .evidence-box h3 {
+      margin-top: 10px;
+      margin-bottom: 6px;
+      font-size: 0.98rem;
+    }
+
+    .evidence-box p,
+    .evidence-box ul {
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    .evidence-box ul {
+      padding-left: 18px;
+    }
+
+    .evidence-box li {
+      margin-bottom: 4px;
+    }
+
+    .evidence-tagline {
+      font-size: 0.86rem;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .evidence-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.2fr);
+      gap: 16px;
+    }
+
+    .evidence-layout img {
+      max-width: 100%;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid rgba(148,163,184,0.3);
+      background: #020617;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(31,41,55,0.9);
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
     }
 
     @media (max-width: 840px) {
       .hero {
         grid-template-columns: minmax(0, 1fr);
       }
+
+      .hero-right {
+        order: -1;
+      }
+
+      .grid-two, .evidence-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
     }
 
-    .hero-main h1 {
-      font-size: clamp(2.1rem, 3vw, 2.6rem);
-      margin: 0 0 0.25rem;
-      letter-spacing: 0.02em;
-    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-    .hero-tagline {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-bottom: 0.75rem;
-    }
+      .hero {
+        padding: 18px;
+      }
 
-    .hero-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      padding: 0.2rem 0.7rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.92);
-      border: 1px solid rgba(75, 85, 99, 0.75);
-      font-size: 0.75rem;
-      color: #e5e7eb;
-      margin-bottom: 0.75rem;
-    }
-
-    .hero-pill span {
-      font-size: 0.7rem;
-      padding: 0.1rem 0.55rem;
-      border-radius: 999px;
-      background: rgba(79, 70, 229, 0.16);
-      border: 1px solid rgba(79, 70, 229, 0.7);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.4rem 1.25rem;
-      margin-bottom: 0.75rem;
-      font-size: 0.85rem;
-    }
-
-    .hero-grid dt {
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
-      color: var(--text-muted);
-    }
-
-    .hero-grid dd {
-      margin: 0;
-      font-weight: 500;
-    }
-
-    .criteria-box {
-      margin-top: 0.75rem;
-      padding: 0.8rem 0.9rem;
-      border-radius: 0.9rem;
-      background: rgba(15, 23, 42, 0.95);
-      border: 1px solid rgba(55, 65, 81, 0.8);
-      font-size: 0.8rem;
-    }
-
-    .criteria-title {
-      text-transform: uppercase;
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      color: var(--text-muted);
-      margin-bottom: 0.25rem;
-    }
-
-    .criteria-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.3rem;
-    }
-
-    .criteria-tags span {
-      background: var(--badge-bg);
-      border-radius: 999px;
-      padding: 0.15rem 0.6rem;
-      border: 1px solid rgba(55, 65, 81, 0.9);
-      font-size: 0.74rem;
-    }
-
-    .hero-side {
-      padding: 0.9rem 1rem;
-      border-radius: 1rem;
-      background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.28), transparent 55%),
-      rgba(15, 23, 42, 0.96);
-      border: 1px solid rgba(55, 65, 81, 0.95);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.85);
-    }
-
-    .hero-side h2 {
-      font-size: 1rem;
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-    }
-
-    .chip-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.35rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .chip {
-      font-size: 0.75rem;
-      padding: 0.2rem 0.55rem;
-      border-radius: 999px;
-      background: var(--chip-bg);
-      border: 1px solid var(--chip-border);
-      color: var(--text-muted);
-    }
-
-    .kv-list {
-      list-style: none;
-      padding: 0;
-      margin: 0.4rem 0 0.75rem;
-      font-size: 0.82rem;
-    }
-
-    .kv-list li {
-      display: flex;
-      justify-content: space-between;
-      gap: 0.5rem;
-      padding: 0.2rem 0;
-      border-bottom: 1px dashed rgba(31, 41, 55, 0.8);
-    }
-
-    .kv-label {
-      color: var(--text-muted);
-      font-size: 0.78rem;
-    }
-
-    .kv-value {
-      font-weight: 500;
-    }
-
-    .link-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.75rem;
-    }
-
-    .btn-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      font-size: 0.78rem;
-      padding: 0.35rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid rgba(75, 85, 99, 0.85);
-      background: rgba(15, 23, 42, 0.92);
-      color: #e5e7eb;
-      text-decoration: none;
-    }
-
-    .btn-link.primary {
-      border-color: rgba(79, 70, 229, 0.9);
-      background: linear-gradient(to right, rgba(79, 70, 229, 0.9), rgba(147, 51, 234, 0.85));
-    }
-
-    .btn-link.primary:hover {
-      filter: brightness(1.05);
-    }
-
-    .btn-link:hover {
-      text-decoration: none;
-      border-color: rgba(148, 163, 184, 0.9);
-    }
-
-    main {
-      margin-top: 0.75rem;
-    }
-
-    section {
-      margin: 1.5rem 0;
-      padding: 1.15rem 1.1rem;
-      border-radius: 0.9rem;
-      background: rgba(15, 23, 42, 0.96);
-      border: 1px solid rgba(31, 41, 55, 0.95);
-    }
-
-    section:nth-of-type(2n) {
-      background: rgba(12, 20, 38, 0.96);
-    }
-
-    .section-header {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      align-items: baseline;
-      margin-bottom: 0.4rem;
-    }
-
-    .section-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-    }
-
-    .section-title {
-      font-size: 1.2rem;
-      margin: 0.05rem 0 0.35rem;
-    }
-
-    .criteria-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.3rem;
-      font-size: 0.72rem;
-    }
-
-    .criteria-badges span {
-      border-radius: 999px;
-      padding: 0.15rem 0.55rem;
-      background: var(--accent-soft);
-      border: 1px solid rgba(79, 70, 229, 0.4);
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #c7d2fe;
-    }
-
-    h3 {
-      margin-top: 0.9rem;
-      margin-bottom: 0.15rem;
-      font-size: 0.98rem;
-    }
-
-    p {
-      margin: 0.15rem 0 0.45rem;
-      font-size: 0.86rem;
-      color: #e5e7eb;
-    }
-
-    ul {
-      margin: 0.2rem 0 0.6rem 1.2rem;
-      padding-left: 0.3rem;
-      font-size: 0.86rem;
-      color: #e5e7eb;
-    }
-
-    li {
-      margin-bottom: 0.3rem;
-    }
-
-    .artefact-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.35rem;
-    }
-
-    .artefact-links a {
-      font-size: 0.8rem;
-      padding: 0.3rem 0.55rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(55, 65, 81, 0.9);
-    }
-
-    .artefact-links a:hover {
-      border-color: rgba(148, 163, 184, 0.9);
-      text-decoration: none;
-    }
-
-    .contact-list {
-      list-style: none;
-      padding: 0;
-      margin: 0.35rem 0 0;
-      font-size: 0.86rem;
-    }
-
-    .contact-list li {
-      margin-bottom: 0.2rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem 0 0.5rem;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-    }
-
-    code {
-      font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 0.8rem;
-      background: rgba(15, 23, 42, 0.95);
-      border-radius: 0.35rem;
-      padding: 0.08rem 0.3rem;
-      border: 1px solid rgba(31, 41, 55, 0.9);
+      .page {
+        padding: 16px 12px 60px;
+      }
     }
   </style>
 </head>
 <body>
-<header>
-  <div class="nav-inner">
-    <div class="nav-brand">
-      <div class="nav-title">Ibrahim Akinyera</div>
-      <div class="nav-subtitle">Data Scientist • Tech Founder • Digital Transformation Leader</div>
+<div class="page">
+  <header>
+    <div class="brand">
+      <h1>IBRAHIM AKINTUNDE AKINYERA</h1>
+      <div class="tagline">AI &amp; Data Science · Cybersecurity · EdTech Founder (NxtAbroad)</div>
     </div>
     <nav>
-      <ul>
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#evidence-1">Evidence 1</a></li>
-        <li><a href="#evidence-2">Evidence 2</a></li>
-        <li><a href="#evidence-3">Evidence 3</a></li>
-        <li><a href="#evidence-4">Evidence 4</a></li>
-        <li><a href="#evidence-5">Evidence 5</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#evidence-1">Evidence 1</a>
+      <a href="#evidence-2">Evidence 2</a>
+      <a href="#evidence-3">Evidence 3</a>
+      <a href="#contact">Links</a>
     </nav>
-  </div>
-</header>
-
-<div class="page">
-  <section id="overview" class="hero">
-    <div class="hero-main">
-      <div class="hero-pill">
-        Global Talent – Digital Technology
-        <span>Tech Nation route</span>
-      </div>
-      <h1>Ibrahim Akintunde Akinyera</h1>
-      <p class="hero-tagline">
-        Data Scientist and Founder of NxtAbroad Limited, building AI-driven tools for global education and migration.
-      </p>
-
-      <dl class="hero-grid">
-        <div>
-          <dt>Profile Snapshot</dt>
-          <dd>
-            MSc Data Science – Ulster University<br>
-            BSc Computer Science – Fountain University<br>
-            Founder &amp; Managing Director – NxtAbroad Limited<br>
-            Experience in healthcare tech, cyber security &amp; EdTech/immigration tech.
-          </dd>
-        </div>
-        <div>
-          <dt>Evidence Portfolio</dt>
-          <dd>
-            This page brings together my core evidence as a data scientist and tech founder,
-            demonstrating innovation, technical contribution and leadership in digital technology.
-          </dd>
-        </div>
-      </dl>
-
-      <div class="criteria-box">
-        <div class="criteria-title">Criteria Mapping</div>
-        <div class="criteria-tags">
-          <span>Mandatory – Proven track record of innovation &amp; impact</span>
-        </div>
-        <div class="criteria-tags" style="margin-top: 0.25rem;">
-          <span>Optional 1 – Founder of a product-led digital tech company (NxtAbroad AI)</span>
-          <span>Optional 2 – Contributions to tech ecosystem, tools, mentoring &amp; content</span>
-        </div>
-      </div>
-    </div>
-
-    <aside class="hero-side">
-      <h2>Quick Links</h2>
-      <div class="chip-row">
-        <span class="chip">AI &amp; ML</span>
-        <span class="chip">Product-Led Founder</span>
-        <span class="chip">EdTech &amp; Immigration Tech</span>
-        <span class="chip">Healthcare Data</span>
-      </div>
-
-      <ul class="kv-list">
-        <li>
-          <span class="kv-label">CV</span>
-          <span class="kv-value"><a href="assets/cv/Ibrahim_Akinyera_TechNationCV.docx" target="_blank" class="btn">Download My CV</a></span>
-        </li>
-        <li>
-          <span class="kv-label">GitHub</span>
-          <span class="kv-value"><a href="https://github.com/akinyeraakintunde" target="_blank" rel="noopener">github.com/akinyeraakintunde</a></span>
-        </li>
-        <li>
-          <span class="kv-label">LinkedIn</span>
-          <span class="kv-value"><a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noopener">linkedin.com/in/ibrahimakinyera</a></span>
-        </li>
-      </ul>
-
-      <div class="link-row">
-        <a class="btn-link primary" href="#evidence-1">View Evidence 1</a>
-        <a class="btn-link" href="#contact">Contact</a>
-      </div>
-    </aside>
-  </section>
+  </header>
 
   <main>
-    <!-- Evidence 1 -->
+    <!-- HERO -->
+    <section class="hero" id="about">
+      <div>
+        <h2>Global Talent Portfolio – Digital Technology</h2>
+        <p class="hero-sub">
+          I am a Data Scientist and technical founder based between the UK and Nigeria.
+          I build decision engines and AI systems for international student recruitment and I have
+          hands-on experience in cybersecurity and infrastructure within UK healthcare.
+        </p>
+        <ul class="hero-highlights">
+          <li>Founder &amp; Managing Director of <strong>NxtAbroad Limited</strong> – tech-enabled
+              education and immigration consultancy.</li>
+          <li>MSc Data Science, Ulster University (NLP, ML, predictive modelling).</li>
+          <li>Industry experience at <strong>Connected Health Group</strong> in infrastructure and
+              cybersecurity.</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="assets/Ibrahim_Akinyera_CV.pdf" target="_blank">
+            Download CV (PDF)
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/akinyeraakintunde" target="_blank">
+            GitHub Profile
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank">
+            LinkedIn
+          </a>
+        </div>
+        <p class="hero-meta">
+          <strong>Tech Nation focus:</strong> AI / Data, Cybersecurity, and EdTech innovation.
+        </p>
+      </div>
+      <div class="hero-right">
+        <h3>Profile Snapshot</h3>
+        <ul class="meta-list">
+          <li><strong>Current role:</strong> Founder &amp; MD – NxtAbroad Limited</li>
+          <li><strong>Location:</strong> United Kingdom / Nigeria</li>
+          <li><strong>Education:</strong> MSc Data Science (Ulster University)</li>
+          <li><strong>Key domains:</strong> AI, Data Engineering, Cybersecurity, EdTech</li>
+          <li><strong>Visa route:</strong> UK Global Talent – Digital Technology</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section id="projects">
+      <h2>Technical Work &amp; Projects</h2>
+      <p class="section-intro">
+        Below is a summary of my most relevant technical work. These projects and roles form
+        the basis of my Tech Nation evidence for innovation and significant technical contribution.
+      </p>
+      <div class="grid-two">
+        <div class="card">
+          <h3>NxtAbroad AI Core – Eligibility &amp; Lead Scoring Engine</h3>
+          <p class="muted">
+            Python rules engine and scoring system that automates student eligibility assessment
+            and prioritisation for international admissions and visa advisory.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Python</span>
+            <span class="pill">Rules Engine</span>
+            <span class="pill">Lead Scoring</span>
+            <span class="pill">EdTech</span>
+          </div>
+          <p class="muted" style="margin-top:8px;">
+            Repo:
+            <a href="https://github.com/akinyeraakintunde/nxtabroad-ai-core" target="_blank">
+              github.com/akinyeraakintunde/nxtabroad-ai-core
+            </a>
+          </p>
+        </div>
+        <div class="card">
+          <h3>Connected Health – Cybersecurity &amp; Infrastructure Support</h3>
+          <p class="muted">
+            Contributed to IT operations and cybersecurity readiness at Connected Health Group
+            in Belfast, supporting device compliance, access control and Cyber Essentials certification.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Cybersecurity</span>
+            <span class="pill">Infrastructure</span>
+            <span class="pill">Healthcare</span>
+            <span class="pill">Compliance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVIDENCE 1 -->
     <section id="evidence-1">
-      <div class="section-header">
+      <h2>Evidence 1: NxtAbroad AI – Intelligent Eligibility &amp; Lead Scoring Engine</h2>
+      <p class="evidence-tagline">
+        Demonstrates technical innovation and product-level engineering in AI-enabled EdTech.
+      </p>
+
+      <div class="evidence-layout">
         <div>
-          <div class="section-kicker">Evidence 1</div>
-          <h2 class="section-title">NxtAbroad AI – AI-Driven EdTech &amp; Immigration Platform</h2>
+          <div class="evidence-box">
+            <h3>Project Summary</h3>
+            <p>
+              <strong>NxtAbroad AI Core</strong> is a Python-based rules engine and lead-scoring system
+              that automates student eligibility checks, visa risk classification and prioritisation for
+              education and immigration advisory. It replaces manual spreadsheet-driven assessments with
+              a consistent, auditable decision engine.
+            </p>
+
+            <h3>What the System Does</h3>
+            <ul>
+              <li>Ingests student lead data from CSV / CRM / web forms.</li>
+              <li>Applies explicit eligibility rules (CGPA, funds, IELTS, visa history).</li>
+              <li>Classifies risk (Low / Medium / High) based on rule violations.</li>
+              <li>Generates a 0–100 lead score using weighted academic, financial and engagement metrics.</li>
+              <li>Produces human-readable explanations for each decision.</li>
+            </ul>
+
+            <h3>Technical Architecture</h3>
+            <ul>
+              <li><code>config.py</code> – country-level thresholds and scoring weights.</li>
+              <li><code>rules_engine.py</code> – deterministic rules and risk classification.</li>
+              <li><code>lead_scoring.py</code> – composite scoring model with risk penalty.</li>
+              <li><code>demo_run.py</code> – CLI script to run the full pipeline against sample data.</li>
+              <li><code>docs/architecture.md</code> – detailed technical documentation.</li>
+            </ul>
+
+            <h3>Impact &amp; Relevance</h3>
+            <p>
+              This project shows my ability to design and implement a production-style decision engine,
+              combining data modelling, rules design, scoring and documentation. It underpins NxtAbroad’s
+              move towards a fully AI-powered recruitment platform and directly supports Tech Nation’s
+              criteria for technical innovation and product-led impact.
+            </p>
+
+            <p class="muted">
+              Repository:
+              <a href="https://github.com/akinyeraakintunde/nxtabroad-ai-core" target="_blank">
+                github.com/akinyeraakintunde/nxtabroad-ai-core
+              </a>
+            </p>
+          </div>
         </div>
-        <div class="criteria-badges">
-          <span>Mandatory</span>
-          <span>Optional 1</span>
-          <span>Optional 2</span>
+        <div>
+          <div class="evidence-box">
+            <h3>Architecture Diagram</h3>
+            <p class="muted">
+              High-level flow of data through the NxtAbroad AI Core engine.
+            </p>
+            <img src="assets/architecture-nxtabroad.png"
+                 alt="NxtAbroad AI architecture diagram">
+            <p class="muted" style="margin-top:8px;">
+              The engine sits between raw lead sources (CSV, database, forms) and
+              advisor-facing tools, enabling consistent eligibility decisions and
+              transparent scoring.
+            </p>
+          </div>
         </div>
-      </div>
-
-      <p>
-        NxtAbroad AI is a product-led platform I am building within NxtAbroad Limited to transform how African
-        students and professionals plan and execute global education and migration journeys. It combines rules,
-        automation and machine learning to make eligibility, programme choice and document preparation more accurate,
-        transparent and scalable.
-      </p>
-
-      <h3>Problem &amp; Vision</h3>
-      <p>
-        Accessing global education routes is complex and error-prone. Applicants often lose opportunities due to
-        unclear eligibility, weak programme choice or poorly prepared financial documents. At NxtAbroad Limited,
-        I see these issues daily across the UK, Canada, Ireland and other destinations.
-      </p>
-      <p>
-        NxtAbroad AI is my response: a productised platform that encodes visa rules, funding logic and programme
-        constraints into reusable software, tailored to African applicants and their documentation patterns.
-      </p>
-
-      <h3>My Role</h3>
-      <ul>
-        <li><strong>Founder &amp; Product Owner:</strong> Conceived NxtAbroad AI from real client pain points.</li>
-        <li><strong>System Architect:</strong> Designed the core architecture, data model and user journeys.</li>
-        <li><strong>Lead Developer (MVP):</strong> Implementing backend logic, automation scripts and prototype tools.</li>
-        <li><strong>Business Lead:</strong> Defined commercial model, partnerships and roadmap for B2B expansion.</li>
-      </ul>
-
-      <h3>Core Capabilities (Roadmap)</h3>
-      <ul>
-        <li>Intelligent profile intake with validation for academic, financial and preference data.</li>
-        <li>Eligibility assessment engine for study and visa routes (starting with UK &amp; Canada).</li>
-        <li>Programme and university recommendation engine based on constraints and goals.</li>
-        <li>Document generation (sponsorship letters, financial breakdowns, SOP structures, checklists).</li>
-        <li>Internal &amp; partner dashboards for pipeline tracking and performance analytics.</li>
-      </ul>
-
-      <h3>Concrete Implementation: Visa Readiness Scoring Engine</h3>
-      <p>
-        As a concrete part of NxtAbroad AI, I designed and built an internal
-        <strong>Visa Readiness Scoring Engine</strong> – a machine-learning model that predicts whether a student
-        application is <em>Ready</em>, <em>Medium Risk</em> or <em>High Risk</em> before submission.
-      </p>
-      <ul>
-        <li>
-          Structured feature schema covering demographics, course choice, finance, visa history, study gaps,
-          English language scores and documentation quality.
-        </li>
-        <li>
-          Synthetic but realistic training data generated in Python to protect client privacy while encoding
-          real-world patterns from NxtAbroad’s operations.
-        </li>
-        <li>
-          End-to-end ML pipeline using scikit-learn (preprocessing + Random Forest classifier) saved as a reusable
-          model artefact.
-        </li>
-        <li>
-          Interactive Streamlit app so visa consultants can input applicant details and receive a readiness
-          prediction plus class probabilities:
-          <code>High Risk (0)</code>, <code>Medium Risk (1)</code>, <code>Ready (2)</code>.
-        </li>
-      </ul>
-      <p>
-        This engine turns my personal visa decision experience into a repeatable, explainable AI system, creating
-        a defensible technical asset at the core of NxtAbroad AI.
-      </p>
-
-      <h3>Technical Architecture (High-Level)</h3>
-      <p>The broader NxtAbroad AI platform is structured as a web front-end backed by modular backend services:</p>
-      <ul>
-        <li>User / Student → Web Frontend</li>
-        <li>Frontend → API Layer</li>
-        <li>API → Profile &amp; Application Database</li>
-        <li>API → Eligibility Rules Engine</li>
-        <li>API → Recommendation Engine (ML models, including visa readiness)</li>
-        <li>API → Document Generation &amp; Validation Service</li>
-        <li>Admin &amp; Partners → Dashboard using the same API</li>
-      </ul>
-
-      <h3>Innovation &amp; Impact</h3>
-      <ul>
-        <li>Encodes complex visa rules and funding logic into software instead of ad-hoc human judgment.</li>
-        <li>Designed around African applicants, whose financial and documentation patterns differ from Global North norms.</li>
-        <li>Reduces human error in high-stakes visa decisions via structured validation, templates and scoring.</li>
-        <li>Transforms a consultancy workflow into a product that can be licensed or white-labelled to other agents.</li>
-      </ul>
-
-      <h3>Status &amp; Roadmap</h3>
-      <ul>
-        <li>Python-based MVPs built for eligibility checks, document generation and visa readiness scoring.</li>
-        <li>Components already support internal NxtAbroad client files (letters, breakdowns, checklists).</li>
-        <li>Next 12–24 months: full web interface, partner dashboards, more destinations and outcome-based models.</li>
-      </ul>
-
-      <h3>Links &amp; Supporting Artefacts</h3>
-      <div class="artefact-links">
-        <a href="https://github.com/akinyeraakintunde/nxtabroad-ai-core" target="_blank" rel="noopener">
-          NxtAbroad AI Core – GitHub
-        </a>
-        <a href="https://github.com/akinyeraakintunde/nxtabroad-data-validation" target="_blank" rel="noopener">
-          NxtAbroad Data Validation Toolkit – GitHub
-        </a>
-        <a href="https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml" target="_blank" rel="noopener">
-          Visa Readiness Engine – GitHub
-        </a>
-        <a href="NxtAbroad-AI-Extended-Business-Plan.pdf" target="_blank" rel="noopener">
-          NxtAbroad AI Extended Business Plan (PDF)
-        </a>
       </div>
     </section>
 
-    <!-- Evidence 2 -->
+    <!-- EVIDENCE 2 -->
     <section id="evidence-2">
-  <h2>Evidence 2: Technical Contribution – Cyber Essentials at Connected Health</h2>
+      <h2>Evidence 2: Technical Contribution – Cyber Essentials at Connected Health</h2>
+      <p class="evidence-tagline">
+        Demonstrates significant technical contribution and cybersecurity expertise in a UK
+        healthcare environment.
+      </p>
 
-  <p>
-    This evidence demonstrates my technical contribution to the successful
-    <strong>Cyber Essentials</strong> certification at
-    <strong>Connected Health Group Limited</strong>, a leading homecare and
-    digital health provider in Northern Ireland.
-    I worked as part of the internal IT / infrastructure team, supporting
-    cybersecurity readiness, device compliance and documentation for the
-    certification process.
-  </p>
+      <div class="evidence-box">
+        <h3>Organisation</h3>
+        <p>
+          <strong>Connected Health Group Limited</strong> is a leading homecare and digital
+          health provider in Northern Ireland. The organisation operates across multiple regions
+          and handles sensitive healthcare and staff data across cloud platforms, endpoints and
+          mobile devices. Cybersecurity and compliance are critical to its operations.
+        </p>
 
-  <div class="evidence-box">
-    <h3>🏥 Organisation</h3>
-    <p>
-      <strong>Connected Health Group Limited</strong><br>
-      Digital & domiciliary healthcare organisation operating across
-      Northern Ireland and the UK, managing sensitive patient and staff data
-      across cloud platforms, endpoints and mobile devices.
-    </p>
+        <h3>My Role &amp; Contributions</h3>
+        <p>
+          I worked as part of the internal IT / infrastructure team, supporting cybersecurity
+          readiness and operational resilience during Connected Health’s Cyber Essentials
+          certification effort. My contributions included:
+        </p>
+        <ul>
+          <li>Assisting with device and system security checks (patches, antivirus, firewall status).</li>
+          <li>Supporting access and identity reviews (user privileges, MFA, inactive accounts).</li>
+          <li>Helping coordinate patch and update cycles to bring endpoints into compliance.</li>
+          <li>Providing input to evidence preparation for the assessor (device summaries, policy
+              confirmations, configuration information).</li>
+        </ul>
 
-    <h3>🧑🏾‍💻 My Role & Contributions</h3>
-    <ul>
-      <li>Supported internal efforts to achieve UK Government–backed
-          <strong>Cyber Essentials</strong> certification.</li>
-      <li>Helped review device and system security baselines
-          (patching, antivirus, firewall status).</li>
-      <li>Assisted with user access and identity checks
-          (privilege review, inactive accounts, MFA support).</li>
-      <li>Contributed to evidence preparation for the assessor
-          (configuration summaries, device lists, policy information).</li>
-      <li>Worked under the Infrastructure &amp; Operations Manager within a
-          regulated healthcare environment.</li>
-    </ul>
+        <h3>Independent Validation</h3>
+        <p>
+          A formal recommendation letter from
+          <strong>Terrence Nemayire – Infrastructure &amp; Operations Manager, Connected Health
+          Group Limited</strong>, confirms my contributions to the certification process and my
+          competence in cybersecurity and infrastructure support. This letter is included in my
+          Tech Nation submission.
+        </p>
 
-    <h3>📄 Independent Validation</h3>
-    <p>
-      A recommendation letter from
-      <strong>Terrence Nemayire – Infrastructure &amp; Operations Manager,
-      Connected Health Group Limited</strong> confirms my contributions to
-      the Cyber Essentials certification process and my technical competence
-      in cybersecurity and infrastructure support.
-      This letter is included in my Tech Nation evidence pack.
-    </p>
+        <h3>Outcome &amp; Relevance</h3>
+        <ul>
+          <li>Connected Health successfully obtained <strong>Cyber Essentials Certification</strong>,
+              strengthening its cyber posture and compliance position.</li>
+          <li>My work contributed to improved device compliance, better access control and more
+              robust patch management.</li>
+          <li>This evidence supports Tech Nation’s criteria for
+              <strong>Significant Technical Contribution</strong> and
+              <strong>Demonstrable Expertise</strong> in a real-world, regulated environment.</li>
+        </ul>
+      </div>
+    </section>
 
-    <h3>✅ Impact</h3>
-    <ul>
-      <li>Supported Connected Health in successfully obtaining
-          <strong>Cyber Essentials Certification</strong>.</li>
-      <li>Improved device compliance, patch management and access control
-          processes.</li>
-      <li>Contributed to stronger protection of sensitive healthcare data
-          and reduced cyber risk for the organisation.</li>
-    </ul>
-
-    <h3>🎯 Relevance to Tech Nation Criteria</h3>
-    <p>
-      This evidence supports the Tech Nation optional criteria for
-      <strong>Significant Technical Contribution</strong> and
-      <strong>Demonstrable Expertise</strong> by showing my involvement in
-      real-world cybersecurity work at a UK digital health organisation.
-    </p>
-  </div>
-</section>
-
-    <!-- Evidence 3 -->
+    <!-- EVIDENCE 3 (ML PROJECT PLACEHOLDER) -->
     <section id="evidence-3">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Evidence 3</div>
-          <h2 class="section-title">Healthcare &amp; Public Health Risk Prediction Projects</h2>
-        </div>
-        <div class="criteria-badges">
-          <span>Mandatory</span>
-          <span>Optional 2</span>
-        </div>
-      </div>
-
-      <p>
-        Predictive modelling and data analysis projects focused on healthcare outcomes and public health,
-        including diabetes readmission risk and the impact of COVID-19 on hospital appointments.
+      <h2>Evidence 3: MSc Machine Learning Project – Twitter Thematic Classifier</h2>
+      <p class="evidence-tagline">
+        Demonstrates academic depth and applied machine learning in natural language processing.
       </p>
 
-      <h3>Diabetes Readmission – Hospital Readmission Risk</h3>
-      <p>
-        <strong>Repository:</strong> Diabetes-Readmission
-      </p>
-      <p>
-        A predictive modelling project using clinical and demographic data to estimate the risk of hospital readmission
-        for diabetic patients.
-      </p>
+      <div class="evidence-box">
+        <h3>Project Summary</h3>
+        <p>
+          As part of my MSc Data Science at Ulster University I developed a machine-learning
+          pipeline to classify Twitter posts into thematic categories such as politics, health,
+          sports and entertainment. The project explored data collection, preprocessing,
+          feature engineering, model training and evaluation on noisy social media data.
+        </p>
 
-      <ul>
-        <li>Prepared and cleaned a large clinical dataset of diabetes-related admissions.</li>
-        <li>Engineered features and handled class imbalance and missing data.</li>
-        <li>Trained and evaluated multiple ML models and interpreted the key predictors.</li>
-      </ul>
+        <h3>Technical Highlights</h3>
+        <ul>
+          <li>Data acquisition and cleaning for large volumes of tweets.</li>
+          <li>Text preprocessing: tokenisation, normalisation, removal of noise and emojis.</li>
+          <li>Baseline models with classical ML (Logistic Regression, SVM) and comparison with
+              deep learning approaches.</li>
+          <li>Hyperparameter tuning and evaluation using F1-score and confusion matrices.</li>
+          <li>Discussion of real-world applications for media monitoring and policy analysis.</li>
+        </ul>
 
-      <h3>Effect of COVID-19 on Medical Appointments in UK Hospitals</h3>
-      <p>
-        <strong>Repository:</strong> Effect-of-covid-19-medical-appointments-in-hospitals-around-the-UK
-      </p>
-      <p>
-        Data analysis project exploring variations in waiting times and appointments after the COVID-19 pandemic,
-        using UK hospital data.
-      </p>
-
-      <ul>
-        <li>Descriptive analysis to understand changes in appointment patterns and waiting times.</li>
-        <li>Visualisation of trends pre- and post-pandemic.</li>
-        <li>Insights relevant to healthcare service planning and capacity management.</li>
-      </ul>
-
-      <h3>Impact &amp; Relevance</h3>
-      <ul>
-        <li>Demonstrates ability to handle sensitive, high-stakes data responsibly.</li>
-        <li>Approach generalises to risk prediction in other healthcare and operational domains.</li>
-        <li>Shows strong understanding of the end-to-end ML lifecycle and public health context.</li>
-      </ul>
-
-      <h3>Links &amp; Supporting Artefacts</h3>
-      <div class="artefact-links">
-        <a href="https://github.com/akinyeraakintunde/Diabetes-Readmission" target="_blank" rel="noopener">
-          Diabetes-Readmission – GitHub
-        </a>
-        <a href="https://github.com/akinyeraakintunde/Effect-of-covid-19-medical-appointments-in-hospitals-around-the-UK" target="_blank" rel="noopener">
-          Effect of COVID-19 Appointments – GitHub
-        </a>
-        <a href="Diabetes-Readmission-Report.pdf" target="_blank" rel="noopener">
-          Diabetes Readmission Report / Slides (PDF)
-        </a>
+        <p class="muted">
+          A full write-up, code and results are included in my academic evidence pack and can be
+          shared with assessors on request.
+        </p>
       </div>
     </section>
 
-    <!-- Evidence 4 -->
-    <section id="evidence-4">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Evidence 4</div>
-          <h2 class="section-title">Data Validation Toolkit &amp; Operational Automation at NxtAbroad</h2>
-        </div>
-        <div class="criteria-badges">
-          <span>Mandatory</span>
-          <span>Optional 1</span>
-          <span>Optional 2</span>
-        </div>
-      </div>
-
-      <p>
-        A set of Python-based tools and digital processes to reduce errors in visa and admission workflows at
-        NxtAbroad Limited, alongside earlier data validation work on clinical datasets.
-      </p>
-
-      <h3>Operational Data Validation – NxtAbroad</h3>
-      <p>
-        Within NxtAbroad, I designed and implemented an internal toolkit to validate spreadsheets and structured data
-        used in visa and admissions workflows.
-      </p>
-
-      <ul>
-        <li>Reusable validation functions for CSV/Excel files using Python and pandas.</li>
-        <li>Rules for missing/invalid values, date ranges, numeric thresholds and consistency checks.</li>
-        <li>Logging of errors and warnings for review before submission.</li>
-        <li>Designed as a foundation for a standalone validation microservice within NxtAbroad AI.</li>
-      </ul>
-
-      <h3>Data-Validation-with-Python- (AIBL Dataset)</h3>
-      <p>
-        <strong>Repository:</strong> Data-Validation-with-Python-
-      </p>
-      <p>
-        This project focuses on analysing and validating patient data from the Australian Imaging, Biomarkers &amp;
-        Lifestyle (AIBL) dataset.
-      </p>
-
-      <ul>
-        <li>Explored patient characteristics and ensured data quality for further ML/analysis.</li>
-        <li>Implemented checks for missing values, outliers and inconsistent records.</li>
-        <li>Demonstrates transferable skills for designing validation logic later reused in NxtAbroad tools.</li>
-      </ul>
-
-      <h3>Operational Impact</h3>
-      <ul>
-        <li>Standardised checks across consultants, reducing variation and oversights.</li>
-        <li>Improved internal quality control before documents are submitted to institutions and embassies.</li>
-        <li>Shows practical application of engineering skills inside a real business context.</li>
-      </ul>
-
-      <h3>Links &amp; Supporting Artefacts</h3>
-      <div class="artefact-links">
-        <a href="https://github.com/akinyeraakintunde/nxtabroad-data-validation" target="_blank" rel="noopener">
-          NxtAbroad Data Validation Toolkit – GitHub
-        </a>
-        <a href="https://github.com/akinyeraakintunde/Data-Validation-with-Python-" target="_blank" rel="noopener">
-          Data-Validation-with-Python- – GitHub
-        </a>
-        <a href="NxtAbroad-SOPs-Automation-Overview.pdf" target="_blank" rel="noopener">
-          NxtAbroad SOPs &amp; Automation Overview (PDF)
-        </a>
-      </div>
-    </section>
-
-    <!-- Evidence 5 -->
-    <section id="evidence-5">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Evidence 5</div>
-          <h2 class="section-title">Leadership, Mentoring &amp; Ecosystem Contributions</h2>
-        </div>
-        <div class="criteria-badges">
-          <span>Mandatory</span>
-          <span>Optional 2</span>
-        </div>
-      </div>
-
-      <p>
-        Founder-led team management, mentoring of applicants and knowledge-sharing across education and migration tech.
-      </p>
-
-      <h3>Founder &amp; Team Leadership</h3>
-      <ul>
-        <li>Founder &amp; Managing Director of NxtAbroad Limited.</li>
-        <li>Responsible for strategy, hiring, training and performance management.</li>
-        <li>Implemented digital tools and SOPs for visa consultants and digital marketers.</li>
-      </ul>
-
-      <h3>Mentoring &amp; Education</h3>
-      <ul>
-        <li>Mentors students and professionals on programme selection, funding and visa strategy.</li>
-        <li>Provides structured templates for sponsorship letters, financial planning and documentation.</li>
-        <li>Shares insights on study-abroad and immigration processes through sessions and content.</li>
-      </ul>
-
-      <h3>Tech, Cyber Security &amp; Web Projects</h3>
-      <ul>
-        <li>Contributed to cyber security and digital process improvements at Connected Health (Northern Ireland), including support for Cyber Essentials work.</li>
-        <li><strong>Uncle-Lagos-Couture-Website</strong> – developed a responsive website for a fashion brand using PHP, MySQL, WordPress, HTML5/CSS3, Bootstrap and JavaScript.</li>
-        <li>Earlier portfolio and web experiments such as <strong>IbrahimAkinyera.github.io</strong> and <strong>Porfolio-Project</strong>.</li>
-      </ul>
-
-      <h3>Public Presence &amp; Documentation</h3>
-      <ul>
-        <li>Maintains a public GitHub portfolio of data and product projects.</li>
-        <li>Developing written guides on visa and education planning.</li>
-        <li>Positioning NxtAbroad AI as a platform that can support other agents and practitioners.</li>
-      </ul>
-
-      <h3>Links &amp; Supporting Artefacts</h3>
-      <div class="artefact-links">
-        <a href="https://nxtabroad.com" target="_blank" rel="noopener">NxtAbroad Limited – Company Website</a>
-        <a href="https://github.com/akinyeraakintunde/Uncle-Lagos-Couture-Website" target="_blank" rel="noopener">
-          Uncle Lagos Couture Website – GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noopener">LinkedIn Profile</a>
-        <a href="Leadership-Mentoring-Evidence-Pack.pdf" target="_blank" rel="noopener">
-          Leadership &amp; Mentoring Evidence Pack (PDF)
-        </a>
-      </div>
-    </section>
-
-    <!-- Contact -->
+    <!-- CONTACT / LINKS -->
     <section id="contact">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Contact &amp; Final Notes</div>
-          <h2 class="section-title">Get in Touch</h2>
-        </div>
+      <h2>Key Links &amp; Contact</h2>
+      <div class="card">
+        <h3>Online Profiles</h3>
+        <ul class="meta-list">
+          <li>GitHub: <a href="https://github.com/akinyeraakintunde" target="_blank">
+            github.com/akinyeraakintunde</a></li>
+          <li>LinkedIn:
+            <a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank">
+              linkedin.com/in/ibrahimakinyera</a>
+          </li>
+          <li>NxtAbroad:
+            <a href="https://www.instagram.com/nxtabroad" target="_blank">@nxtabroad</a>
+          </li>
+        </ul>
+        <p class="muted" style="margin-top:8px;">
+          Full supporting documents – evidence PDFs, recommendation letters, and detailed
+          project reports – are available in my Global Talent submission bundle and can be
+          supplied to assessors on request.
+        </p>
       </div>
-
-      <p>
-        If you are reviewing my Global Talent application or would like further technical detail on any project,
-        please feel free to contact me.
-      </p>
-
-      <ul class="contact-list">
-        <li><strong>Email:</strong> <a href="mailto:Akinyera.akintunde@gmail.com">Akinyera.akintunde@gmail.com</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/akinyeraakintunde" target="_blank" rel="noopener">
-          github.com/akinyeraakintunde</a></li>
-        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noopener">
-          linkedin.com/in/ibrahimakinyera</a></li>
-      </ul>
     </section>
   </main>
 
   <footer>
-    © Ibrahim Akintunde Akinyera. All rights reserved.
+    <span>&copy; <script>document.write(new Date().getFullYear());</script> Ibrahim Akintunde Akinyera</span>
+    <span>Global Talent – Digital Technology Portfolio</span>
   </footer>
 </div>
 </body>
