@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Evidence – Enterprise Risk Intelligence Engine – Ibrahim Akinyera</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 16px 40px;
+      line-height: 1.6;
+      color: #111827;
+      background: #f5f7fb;
+    }
+    h1, h2, h3 {
+      color: #0b1120;
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 24px;
+      margin-bottom: 6px;
+    }
+    h3 {
+      font-size: 16px;
+      margin-top: 16px;
+      margin-bottom: 4px;
+    }
+    p {
+      margin: 6px 0;
+      text-align: justify;
+    }
+    ul {
+      margin: 6px 0 6px 20px;
+    }
+    .meta {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 16px;
+    }
+    .box {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 12px 14px;
+      border: 1px solid #e5e7eb;
+      margin: 10px 0;
+    }
+    .highlight {
+      font-weight: 600;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #e5e7eb;
+      margin: 18px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enterprise Risk Intelligence Engine</h1>
+  <div class="meta">
+    Evidence document – Tech Nation Global Talent (Digital Technology)<br />
+    Prepared by: Ibrahim Akinyera
+  </div>
+
+  <h2>1. Executive Summary</h2>
+  <p>
+    The Enterprise Risk Intelligence Engine is an AI-enabled cybersecurity and technology risk analytics system
+    that ingests enterprise system logs, detects suspicious events, scores them using Key Risk Indicators (KRIs),
+    and generates structured risk intelligence reports. The project demonstrates end-to-end capability in
+    architecture design, Python engineering, risk modelling and collaboration with an enterprise Technology
+    Risk Analyst at CME Group.
+  </p>
+
+  <h2>2. Problem and Purpose</h2>
+  <p>
+    Modern organisations generate large volumes of logs from authentication systems, applications, devices and
+    networks. Technology Risk and Security teams must identify high-risk behaviour, prioritise incidents and
+    communicate risk clearly, but manual analysis does not scale.
+  </p>
+  <p>
+    The purpose of this project is to build a reusable engine that:
+  </p>
+  <ul>
+    <li>Ingests and parses enterprise-style logs.</li>
+    <li>Identifies anomalies aligned to real Technology Risk KRIs.</li>
+    <li>Assigns risk scores and levels (Low/Medium/High/Critical).</li>
+    <li>Produces audit-ready HTML risk intelligence reports.</li>
+  </ul>
+
+  <h2>3. Technical Architecture</h2>
+  <div class="box">
+    <p><span class="highlight">Layers:</span></p>
+    <ul>
+      <li><strong>Log Ingestion Layer:</strong> Loads CSV logs (e.g. logins, failures, privilege events, data exports).</li>
+      <li><strong>Anomaly Detection Layer:</strong> Applies rules and KRIs to flag suspicious events.</li>
+      <li><strong>Risk Scoring Engine:</strong> Converts anomalies into numeric scores and risk levels.</li>
+      <li><strong>Reporting Layer:</strong> Generates an HTML risk report (risk_report.html).</li>
+    </ul>
+  </div>
+  <p>
+    The codebase is structured into <code>src/</code> (logic), <code>data/system_logs/</code> (sample logs) and
+    <code>diagrams/</code> (architecture assets), with a top-level <code>README.md</code> for documentation.
+  </p>
+
+  <h2>4. Detection and Risk Model</h2>
+  <h3>4.1 Anomaly Detection</h3>
+  <p>
+    The anomaly detector loads log entries and flags events using simple but enterprise-aligned rules:
+  </p>
+  <ul>
+    <li>High-risk event types such as <code>privilege_escalation</code>, <code>data_export</code>, <code>suspicious_login</code>.</li>
+    <li>Repeated <code>failed</code> login attempts indicating brute-force behaviour.</li>
+  </ul>
+
+  <h3>4.2 KRI-Based Risk Scoring</h3>
+  <p>
+    In the <code>RiskScorer</code> class, events are scored from 1 to 10 based on type and status. This reflects
+    enterprise KRIs provided by a Senior Technology Risk Analyst:
+  </p>
+  <ul>
+    <li><strong>KRI1:</strong> Repeated failed logins (brute force indicator).</li>
+    <li><strong>KRI2:</strong> Privilege escalation events.</li>
+    <li><strong>KRI3:</strong> Data export from sensitive systems.</li>
+    <li><strong>KRI4:</strong> Suspicious login patterns (unusual IP or location).</li>
+  </ul>
+  <p>
+    Scores map to risk levels:
+  </p>
+  <ul>
+    <li>1–3: Low</li>
+    <li>4–6: Medium</li>
+    <li>7–8: High</li>
+    <li>9–10: Critical</li>
+  </ul>
+
+  <h2>5. Reporting and Outputs</h2>
+  <p>
+    The <code>ReportGenerator</code> class generates an HTML table summarising all anomalies, including:
+  </p>
+  <ul>
+    <li>Timestamp</li>
+    <li>User</li>
+    <li>Event type</li>
+    <li>Source IP</li>
+    <li>Status</li>
+    <li>Risk score and level</li>
+    <li>Reason for flagging (linked to KRIs)</li>
+  </ul>
+  <p>
+    A sample report is included in the submitted evidence screenshots, showing the tool running in GitHub
+    Codespaces and generating <code>risk_report.html</code>.
+  </p>
+
+  <h2>6. My Role and Leadership</h2>
+  <p>
+    I led the architecture and implementation of the engine, including:
+  </p>
+  <ul>
+    <li>Designing the four-layer modular architecture.</li>
+    <li>Implementing log ingestion, anomaly detection, scoring and reporting in Python.</li>
+    <li>Encoding KRIs and enterprise risk levels into the scoring model.</li>
+    <li>Creating and maintaining the public GitHub repository.</li>
+    <li>Preparing documentation and the KPMG-style written evidence document.</li>
+  </ul>
+
+  <h2>7. Expert Collaboration</h2>
+  <p>
+    The risk model and KRI definitions were developed in collaboration with
+    <strong>Busayo Odukoya, Senior Technology Risk Analyst (CME Group)</strong>. His contribution included:
+  </p>
+  <ul>
+    <li>Defining relevant Technology Risk scenarios and KRIs.</li>
+    <li>Advising on severity thresholds for High and Critical events.</li>
+    <li>Reviewing the risk scoring approach for alignment with enterprise practice.</li>
+  </ul>
+  <p>
+    This ensures that the system is grounded in real-world Technology Risk practice, not only theoretical design.
+  </p>
+
+  <h2>8. Evidence and Verification</h2>
+  <p>
+    The GitHub repository and screenshots submitted alongside this document provide verifiable evidence:
+  </p>
+  <ul>
+    <li>Repository: <a href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine">
+      github.com/akinyeraakintunde/enterprise-risk-intelligence-engine</a></li>
+    <li>Execution logs from GitHub Codespaces.</li>
+    <li>Screenshot of the generated <code>risk_report.html</code>.</li>
+    <li>Architecture diagram for the engine.</li>
+  </ul>
+
+  <h2>9. Conclusion</h2>
+  <p>
+    The Enterprise Risk Intelligence Engine demonstrates technical leadership in AI/ML, cybersecurity and Technology
+    Risk. It is an enterprise-style solution built collaboratively with an industry expert and is fully verifiable
+    through its public code and outputs. It represents a strong example of the kind of work I would bring to the
+    UK digital technology ecosystem.
+  </p>
+
+  <hr />
+  <p class="meta">
+    Prepared by: Ibrahim Akinyera<br />
+    For: Tech Nation Global Talent (Digital Technology)
+  </p>
+</body>
+</html>
