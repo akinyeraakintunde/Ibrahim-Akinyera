@@ -2,42 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Ibrahim Akinyera – Tech Nation Global Talent Portfolio</title>
+  <title>Ibrahim Akintunde Akinyera – Global Talent Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Tech Nation Global Talent portfolio for Ibrahim Akinyera – AI/ML engineering, cybersecurity, and technology risk."
+    content="Global Talent (Tech) portfolio of Ibrahim Akintunde Akinyera – Founder, Machine Learning Engineer, and Data Scientist."
   />
+
+  <!-- Optional: keep if you already use style.css -->
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+
   <style>
     :root {
-      --bg: #050714;
-      --bg-alt: #0b1020;
-      --card-bg: #12172b;
-      --accent: #1e90ff;
-      --accent-soft: rgba(30, 144, 255, 0.12);
-      --text: #f6f7ff;
-      --muted: #a3acc5;
-      --border: #232a40;
-      --danger: #c0392b;
-      --success: #27ae60;
-      --shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+      --bg: #050816;
+      --bg-soft: #0f172a;
+      --card-bg: #020617;
+      --accent: #0ea5e9;
+      --accent-soft: rgba(14, 165, 233, 0.12);
+      --accent-2: #22c55e;
+      --text-main: #e5e7eb;
+      --text-soft: #9ca3af;
+      --border-subtle: rgba(148, 163, 184, 0.4);
       --radius-lg: 18px;
-      --radius-md: 12px;
-      --radius-pill: 999px;
-      --max-width: 1080px;
+      --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.65);
+      --shadow-card: 0 12px 32px rgba(15, 23, 42, 0.7);
     }
 
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #1a2645 0, #050714 45%, #02030a 100%);
-      color: var(--text);
-      line-height: 1.6;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Inter", sans-serif;
+      background: radial-gradient(circle at top, #1f2933 0, #020617 55%, #000 100%);
+      color: var(--text-main);
       -webkit-font-smoothing: antialiased;
     }
 
@@ -50,778 +50,1021 @@
       text-decoration: underline;
     }
 
-    .page {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 24px 16px 64px;
+    .page-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
+    .container {
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* NAVBAR */
     header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: radial-gradient(circle at top left, rgba(14, 165, 233, 0.18), transparent 55%),
+        rgba(2, 6, 23, 0.9);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+    }
+
+    .nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      padding: 12px 18px;
-      margin-bottom: 24px;
-      background: linear-gradient(90deg, rgba(10, 16, 35, 0.96), rgba(10, 16, 35, 0.98));
-      border-radius: var(--radius-pill);
-      border: 1px solid var(--border);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-      position: sticky;
-      top: 12px;
-      z-index: 10;
-      backdrop-filter: blur(12px);
+      height: 64px;
     }
 
-    .brand {
+    .nav-left {
       display: flex;
       flex-direction: column;
-      gap: 2px;
     }
 
-    .brand-title {
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 0.04em;
+    .nav-title {
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
+      color: var(--text-soft);
     }
 
-    .brand-sub {
-      font-size: 12px;
-      color: var(--muted);
+    .nav-name {
+      font-weight: 600;
+      font-size: 1rem;
     }
 
-    nav {
+    .nav-right {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      font-size: 0.85rem;
+    }
+
+    .nav-link {
+      color: var(--text-soft);
+      padding: 0.25rem 0.5rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+
+    .nav-link:hover {
+      border-color: rgba(148, 163, 184, 0.6);
+      text-decoration: none;
+    }
+
+    .nav-pill {
+      border-radius: 999px;
+      padding: 0.2rem 0.7rem;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      font-weight: 500;
+      color: var(--accent-2);
+    }
+
+    /* HERO */
+    main {
+      flex: 1;
+    }
+
+    .hero {
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2.1fr) minmax(0, 1.4fr);
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media (max-width: 860px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .hero-kicker {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      color: var(--accent);
+      margin-bottom: 0.7rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2rem, 4vw, 2.6rem);
+      line-height: 1.15;
+      margin: 0 0 0.75rem;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-soft);
+      max-width: 32rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-tags {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
-      justify-content: flex-end;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
     }
 
-    nav a {
-      font-size: 13px;
-      padding: 6px 12px;
-      border-radius: var(--radius-pill);
-      border: 1px solid transparent;
-      color: var(--muted);
+    .tag {
+      font-size: 0.75rem;
+      border-radius: 999px;
+      padding: 0.25rem 0.65rem;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      color: var(--text-soft);
+      background: rgba(15, 23, 42, 0.85);
     }
 
-    nav a:hover {
-      border-color: var(--accent-soft);
-      background: rgba(15, 118, 255, 0.06);
-      color: var(--text);
-      text-decoration: none;
+    .tag-strong {
+      border-color: rgba(34, 197, 94, 0.6);
+      color: var(--accent-2);
+      background: rgba(22, 163, 74, 0.18);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1.4rem;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
-      padding: 8px 16px;
-      border-radius: var(--radius-pill);
-      border: 1px solid var(--accent);
-      background: linear-gradient(135deg, var(--accent), #4f9dff);
-      color: #ffffff;
-      font-size: 13px;
-      font-weight: 600;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.85rem;
+      font-weight: 500;
       cursor: pointer;
       text-decoration: none;
-      box-shadow: 0 12px 30px rgba(30, 144, 255, 0.35);
-      transition: transform 0.08s ease-out, box-shadow 0.08s ease-out, filter 0.08s ease-out;
+      transition: all 0.15s ease-out;
       white-space: nowrap;
     }
 
-    .btn:hover {
-      text-decoration: none;
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #22d3ee);
+      color: #020617;
+      box-shadow: 0 14px 30px rgba(56, 189, 248, 0.45);
+    }
+
+    .btn-primary:hover {
       transform: translateY(-1px);
-      box-shadow: 0 16px 36px rgba(30, 144, 255, 0.45);
-      filter: brightness(1.03);
+      box-shadow: 0 18px 40px rgba(56, 189, 248, 0.6);
+      text-decoration: none;
     }
 
-    .btn-outline {
-      background: transparent;
-      border-color: var(--border);
-      color: var(--text);
-      box-shadow: none;
+    .btn-ghost {
+      border-color: rgba(148, 163, 184, 0.7);
+      color: var(--text-soft);
+      background: rgba(15, 23, 42, 0.9);
     }
 
-    .btn-outline:hover {
+    .btn-ghost:hover {
       border-color: var(--accent);
-      background: rgba(30, 144, 255, 0.06);
-    }
-
-    .section {
-      margin-top: 40px;
-      padding: 28px 22px;
-      background: linear-gradient(145deg, rgba(11, 17, 38, 0.98), rgba(7, 11, 24, 0.98));
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-    }
-
-    .section + .section {
-      margin-top: 32px;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 16px;
-    }
-
-    .section-title {
-      font-size: 20px;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    .section-kicker {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-    }
-
-    .section-subtitle {
-      font-size: 14px;
-      color: var(--muted);
-      max-width: 640px;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 3fr) minmax(0, 2.4fr);
-      gap: 28px;
-      align-items: center;
-    }
-
-    .hero-title {
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .hero-body {
-      font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 14px;
+      color: var(--accent);
+      text-decoration: none;
     }
 
     .hero-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 16px;
+      font-size: 0.78rem;
+      color: var(--text-soft);
     }
 
-    .meta-chip {
-      font-size: 12px;
-      padding: 4px 10px;
-      border-radius: var(--radius-pill);
-      border: 1px solid var(--border);
-      background: rgba(15, 23, 42, 0.9);
-      color: var(--muted);
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    .hero-meta strong {
+      color: #e5e7eb;
     }
 
     .hero-card {
-      background: radial-gradient(circle at top left, #1b2645 0, #070b16 52%, #050712 100%);
+      background: radial-gradient(circle at top, #0f172a, #020617);
       border-radius: var(--radius-lg);
-      border: 1px solid var(--border);
-      padding: 18px 16px;
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .hero-card ul {
-      margin-top: 8px;
-      padding-left: 18px;
-    }
-
-    .hero-card li {
-      margin-bottom: 4px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-      margin-top: 12px;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-      padding: 16px 14px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
+      padding: 1.4rem 1.3rem 1.2rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-soft);
       position: relative;
       overflow: hidden;
     }
 
-    .card::before {
+    .hero-card::before {
       content: "";
       position: absolute;
-      inset: 0;
-      background: radial-gradient(circle at top right, var(--accent-soft), transparent 60%);
+      inset: -40%;
+      opacity: 0.18;
+      background: radial-gradient(circle at 0% 0%, #22d3ee, transparent 55%),
+        radial-gradient(circle at 100% 0%, #22c55e, transparent 55%);
       pointer-events: none;
     }
 
-    .card > * {
+    .hero-card-inner {
       position: relative;
       z-index: 1;
     }
 
-    .card-title {
-      font-size: 15px;
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(148, 163, 184, 0.55);
+      font-size: 0.7rem;
+      color: var(--text-soft);
+      margin-bottom: 0.8rem;
+    }
+
+    .hero-pill span {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+    }
+
+    .hero-metric-title {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-metric-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 0.6rem;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+
+    .hero-metric-list li {
+      margin-bottom: 0.2rem;
+    }
+
+    .hero-evidence-mini {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem;
+      margin-top: 0.7rem;
+    }
+
+    .mini-card {
+      background: rgba(15, 23, 42, 0.95);
+      border-radius: 12px;
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      padding: 0.55rem 0.6rem;
+      font-size: 0.7rem;
+    }
+
+    .mini-label {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      margin-bottom: 0.1rem;
+    }
+
+    /* SECTION GENERIC */
+    section {
+      padding: 2rem 0 0;
+    }
+
+    section + section {
+      padding-top: 3rem;
+    }
+
+    .section-header {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      margin: 0 0 0.4rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+      max-width: 40rem;
+    }
+
+    /* EVIDENCE HUB GRID */
+    .evidence-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .evidence-card {
+      background: radial-gradient(circle at top left, #020617, #020617);
+      border-radius: var(--radius-lg);
+      padding: 1rem 1rem 0.9rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-card);
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .evidence-badge {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-soft);
+    }
+
+    .evidence-title {
+      font-size: 0.95rem;
       font-weight: 600;
     }
 
-    .card-tagline {
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    .card-body {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .card-meta {
-      font-size: 11px;
-      color: var(--muted);
-      opacity: 0.9;
-    }
-
-    .card-actions {
-      margin-top: 6px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .project-visuals {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-      gap: 16px;
-      margin-top: 16px;
-    }
-
-    .visual-card {
-      background: #060816;
-      border-radius: var(--radius-md);
-      border: 1px dashed var(--border);
-      padding: 10px;
-      font-size: 12px;
-      color: var(--muted);
-    }
-
-    .visual-card img {
-      width: 100%;
-      border-radius: 10px;
-      border: 1px solid var(--border);
-      display: block;
-      margin-bottom: 6px;
+    .evidence-body {
+      font-size: 0.8rem;
+      color: var(--text-soft);
     }
 
     .evidence-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 14px;
-      margin-top: 12px;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      padding-left: 1.1rem;
+      margin: 0.3rem 0 0.6rem;
     }
 
-    .evidence-item {
-      background: var(--card-bg);
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-      padding: 12px 12px;
-      font-size: 13px;
-      color: var(--muted);
+    .evidence-links {
       display: flex;
-      flex-direction: column;
-      gap: 6px;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: auto;
     }
 
-    .evidence-name {
-      font-weight: 600;
-      font-size: 13px;
-      color: var(--text);
+    .chip-link {
+      font-size: 0.75rem;
+      border-radius: 999px;
+      padding: 0.25rem 0.7rem;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--text-soft);
+      text-decoration: none;
+      background: rgba(15, 23, 42, 0.9);
     }
 
-    .github-list {
-      margin-top: 12px;
-      font-size: 13px;
+    .chip-link.primary {
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
-    .github-item {
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(35, 42, 64, 0.8);
+    .chip-link:hover {
+      text-decoration: none;
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
-    .github-item:last-child {
-      border-bottom: none;
+    /* DETAILED EVIDENCE SECTIONS */
+    .evidence-detail {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: var(--radius-lg);
+      padding: 1.2rem 1.1rem;
+      border: 1px solid rgba(148, 163, 184, 0.65);
+      box-shadow: var(--shadow-card);
+      margin-bottom: 2rem;
     }
 
-    .github-name {
-      font-weight: 600;
-      color: var(--text);
+    .evidence-detail h3 {
+      margin-top: 0;
+      font-size: 1.05rem;
     }
 
-    .github-meta {
-      font-size: 11px;
-      color: var(--muted);
+    .evidence-meta {
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      margin-bottom: 0.6rem;
     }
 
-    footer {
-      margin-top: 40px;
-      padding: 18px 6px 0;
-      font-size: 12px;
-      color: var(--muted);
-      text-align: center;
-      border-top: 1px solid rgba(35, 42, 64, 0.8);
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.3fr);
+      gap: 1rem;
     }
 
     @media (max-width: 800px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .hero {
+      .two-col {
         grid-template-columns: minmax(0, 1fr);
       }
-      .project-visuals {
-        grid-template-columns: minmax(0, 1fr);
-      }
+    }
+
+    .detail-list {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      padding-left: 1.1rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.4rem;
+      font-size: 0.7rem;
+    }
+
+    .pill {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      padding: 0.2rem 0.6rem;
+      color: var(--text-soft);
+    }
+
+    .pill.green {
+      border-color: rgba(34, 197, 94, 0.7);
+      color: var(--accent-2);
+    }
+
+    /* CONTACT / FOOTER */
+    .contact-card {
+      background: rgba(15, 23, 42, 0.92);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem 1.3rem;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      box-shadow: var(--shadow-card);
+      font-size: 0.88rem;
+    }
+
+    footer {
+      padding: 1.5rem 0 2.5rem;
+      font-size: 0.75rem;
+      color: var(--text-soft);
+      text-align: center;
+    }
+
+    .anchor-link {
+      font-size: 0.75rem;
+      color: var(--text-soft);
+    }
+
+    .anchor-link:hover {
+      color: var(--accent);
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="page">
+  <div class="page-wrap">
     <header>
-      <div class="brand">
-        <div class="brand-title">Ibrahim Akinyera</div>
-        <div class="brand-sub">AI / ML Engineering · Cybersecurity · Technology Risk</div>
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-left">
+            <span class="nav-title">Global Talent – Digital Technology</span>
+            <span class="nav-name">Ibrahim Akintunde Akinyera</span>
+          </div>
+          <div class="nav-right">
+            <a href="#overview" class="nav-link">Overview</a>
+            <a href="#evidence-hub" class="nav-link">Evidence Hub</a>
+            <a href="#evidence-4" class="nav-link">Risk Engine (E4)</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <span class="nav-pill">MSc Data Science · Founder</span>
+          </div>
+        </nav>
       </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#enterprise-risk">Enterprise Risk Engine</a>
-        <a href="#projects">Key Projects</a>
-        <a href="#evidence">Evidence Hub</a>
-        <a href="#github">GitHub</a>
-        <a href="#cv">CV</a>
-      </nav>
     </header>
 
-    <!-- HERO / ABOUT -->
-    <section id="about" class="section">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Profile</div>
-          <h2 class="section-title">Technical Leadership in AI, Cybersecurity and Risk</h2>
-        </div>
-      </div>
-      <div class="hero">
-        <div>
-          <h1 class="hero-title">
-            Building intelligent systems at the intersection of data, security and digital migration.
-          </h1>
-          <p class="hero-body">
-            I am an AI/ML engineer and technology leader with experience across healthcare, education, and
-            risk-focused environments. My work spans enterprise cybersecurity, automated risk scoring, data-driven
-            decision support, and digital transformation within NxtAbroad’s education and immigration operations.
-          </p>
-          <p class="hero-body">
-            This portfolio consolidates the core projects and evidence that underpin my application for the UK Global
-            Talent Visa in Digital Technology, with a focus on technical impact, innovation, and real-world outcomes.
-          </p>
+    <main>
+      <!-- HERO / OVERVIEW -->
+      <section id="overview" class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="hero-kicker">Global Talent – Technical Founder & ML Engineer</div>
+              <h1 class="hero-title">
+                Building <span>AI, risk & cyber</span> systems that solve real problems.
+              </h1>
+              <p class="hero-subtitle">
+                I am a Founder, Machine Learning Engineer and Data Scientist working across
+                <strong>AI, cybersecurity, enterprise risk systems and EdTech/immigration automation</strong>.
+                This portfolio showcases the evidence I am submitting for the UK Global Talent (Digital Technology) route.
+              </p>
 
-          <div class="hero-meta">
-            <span class="meta-chip">Global Talent (Tech Nation) Track</span>
-            <span class="meta-chip">Enterprise Technology Risk</span>
-            <span class="meta-chip">AI / ML Engineering</span>
-            <span class="meta-chip">Digital Transformation (NxtAbroad)</span>
+              <div class="hero-tags">
+                <span class="tag tag-strong">Founder – NxtAbroad Limited</span>
+                <span class="tag">MSc Data Science (Ulster University)</span>
+                <span class="tag">AI &amp; ML Engineering</span>
+                <span class="tag">Cybersecurity &amp; Risk Intelligence</span>
+              </div>
+
+              <div class="hero-actions">
+                <a href="Ibrahim_Akinyera_cv.docx" class="btn btn-primary" target="_blank">
+                  Download CV
+                </a>
+                <a href="#evidence-hub" class="btn btn-ghost">
+                  View Tech Nation Evidence Hub
+                </a>
+                <a href="https://github.com/akinyeraakintunde" target="_blank" class="btn btn-ghost">
+                  GitHub Profile
+                </a>
+              </div>
+
+              <div class="hero-meta">
+                <div><strong>Core focus:</strong> AI-powered decision systems, risk intelligence, EdTech automation.</div>
+                <div><strong>Locations:</strong> Belfast (UK) · Nigeria (Remote)</div>
+              </div>
+            </div>
+
+            <aside class="hero-card">
+              <div class="hero-card-inner">
+                <div class="hero-pill">
+                  <span></span> Evidence Snapshot
+                </div>
+                <div class="hero-metric-title">Tech Nation criteria covered:</div>
+                <ul class="hero-metric-list">
+                  <li>• Mandatory: Innovation &amp; founding NxtAbroad AI</li>
+                  <li>• Optional: Proven technical expertise (AI &amp; risk)</li>
+                  <li>• Optional: Impact in product-led companies &amp; cyber</li>
+                </ul>
+
+                <div class="hero-evidence-mini">
+                  <div class="mini-card">
+                    <div class="mini-label">Evidence 1</div>
+                    <div><strong>NxtAbroad AI</strong></div>
+                    <div style="font-size:0.7rem; color:var(--text-soft);">
+                      Eligibility engine, visa readiness scoring, automation for an education &amp; immigration company I founded.
+                    </div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-label">Evidence 4</div>
+                    <div><strong>Risk Intelligence Engine</strong></div>
+                    <div style="font-size:0.7rem; color:var(--text-soft);">
+                      Enterprise risk system built with a Senior Technology Risk Analyst at CME Group.
+                    </div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-label">Evidence 3</div>
+                    <div><strong>Twitter NLP (MSc)</strong></div>
+                    <div style="font-size:0.7rem; color:var(--text-soft);">
+                      BERT-based thematic classifier with strong F1 scores across categories.
+                    </div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-label">Evidence 5</div>
+                    <div><strong>Cyber Essentials PLUS</strong></div>
+                    <div style="font-size:0.7rem; color:var(--text-soft);">
+                      Technical contribution to Connected Health's first Cyber Essentials PLUS certification.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- EVIDENCE HUB -->
+      <section id="evidence-hub">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Tech Nation Evidence Hub</div>
+            <h2 class="section-title">Key technical projects &amp; contributions</h2>
+            <p class="section-subtitle">
+              These projects represent my strongest work in AI, ML, cybersecurity, and product-building.
+              Each has a dedicated GitHub repository and a structured PDF evidence document.
+            </p>
           </div>
 
-          <div class="hero-actions">
-            <!-- Update this link to your actual CV PDF -->
-            <a href="docs/Ibrahim_Akinyera_CV.pdf" class="btn" target="_blank" rel="noopener">
-              Download CV
-            </a>
-            <a href="#evidence" class="btn btn-outline">
-              View Evidence Hub
-            </a>
+          <div class="evidence-grid">
+            <!-- Evidence 1 -->
+            <article class="evidence-card">
+              <div class="evidence-badge">Evidence 1 – Mandatory Criterion</div>
+              <div class="evidence-title">NxtAbroad AI – EdTech &amp; Immigration Intelligence Platform</div>
+              <p class="evidence-body">
+                Founder-led platform that powers student eligibility checks, visa readiness scoring, and workflow automation
+                for NxtAbroad Limited, my education &amp; travel consultancy.
+              </p>
+              <ul class="evidence-list">
+                <li>Rules engine &amp; risk scoring for UK, Canada, Europe and UAE routes</li>
+                <li>Central system for staff, cases, and decision tracking</li>
+                <li>Demonstrates product leadership and technical ownership</li>
+              </ul>
+              <div class="evidence-links">
+                <a
+                  href="https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml"
+                  target="_blank"
+                  class="chip-link primary"
+                  >GitHub repo</a
+                >
+                <a href="#evidence-1" class="chip-link">View summary below</a>
+                <!-- Update the PDF filename if different -->
+                <a href="Evidence_1_NxtAbroad_AI_Ibrahim_Akinyera.pdf" target="_blank" class="chip-link"
+                  >Download evidence PDF</a
+                >
+              </div>
+            </article>
+
+            <!-- Evidence 3 -->
+            <article class="evidence-card">
+              <div class="evidence-badge">Evidence 3 – Optional (Technical)</div>
+              <div class="evidence-title">Twitter Topic Classifier – MSc Deep Learning NLP Project</div>
+              <p class="evidence-body">
+                BERT-based deep learning pipeline to classify Twitter posts into themes (politics, sports, health,
+                entertainment), built as part of my MSc Data Science degree.
+              </p>
+              <ul class="evidence-list">
+                <li>End-to-end ML: data collection, modelling, evaluation</li>
+                <li>Transformer architecture with contextual embeddings</li>
+                <li>Strong macro-F1 performance on multi-class classification</li>
+              </ul>
+              <div class="evidence-links">
+                <a
+                  href="https://github.com/akinyeraakintunde/Twitter-Topic-Classifier-with-ML"
+                  target="_blank"
+                  class="chip-link primary"
+                  >GitHub repo</a
+                >
+                <a href="#evidence-3" class="chip-link">View summary below</a>
+                <a href="Evidence_3_Twitter_Topic_Classifier_Ibrahim_Akinyera.pdf" target="_blank" class="chip-link"
+                  >Download evidence PDF</a
+                >
+              </div>
+            </article>
+
+            <!-- Evidence 4 -->
+            <article class="evidence-card">
+              <div class="evidence-badge">Evidence 4 – Optional (Technical Expertise)</div>
+              <div class="evidence-title">Enterprise Risk Intelligence Engine – AI + Cybersecurity</div>
+              <p class="evidence-body">
+                AI-powered engine that ingests logs, detects anomalies using machine learning, scores risk using KRIs,
+                and generates automated risk reports for enterprise environments.
+              </p>
+              <ul class="evidence-list">
+                <li>Isolation Forest anomaly detection &amp; scoring logic</li>
+                <li>Built with a Senior Technology Risk Analyst at CME Group</li>
+                <li>Demonstrates deep technical and domain-specific expertise</li>
+              </ul>
+              <div class="evidence-links">
+                <a
+                  href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine"
+                  target="_blank"
+                  class="chip-link primary"
+                  >GitHub repo</a
+                >
+                <a href="#evidence-4" class="chip-link">View summary below</a>
+                <a
+                  href="Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf"
+                  target="_blank"
+                  class="chip-link"
+                  >Download evidence PDF</a
+                >
+              </div>
+            </article>
+
+            <!-- Evidence 5 -->
+            <article class="evidence-card">
+              <div class="evidence-badge">Evidence 5 – Optional (Recognition)</div>
+              <div class="evidence-title">Cyber Essentials PLUS – Technical Contribution (Connected Health)</div>
+              <p class="evidence-body">
+                Recognised technical contribution to achieving Cyber Essentials PLUS certification at Connected Health,
+                a leading UK homecare organisation.
+              </p>
+              <ul class="evidence-list">
+                <li>Endpoint security audits, patching, MFA &amp; firewall validation</li>
+                <li>Evidence collection and support during the audit</li>
+                <li>Management recognition card confirming my impact</li>
+              </ul>
+              <div class="evidence-links">
+                <a
+                  href="https://github.com/akinyeraakintunde/connected-health-cyber-essentials-plus"
+                  target="_blank"
+                  class="chip-link primary"
+                  >GitHub repo</a
+                >
+                <a href="#evidence-5" class="chip-link">View summary below</a>
+                <a
+                  href="Evidence_5_Cyber_Essentials_Ibrahim_Akinyera.pdf"
+                  target="_blank"
+                  class="chip-link"
+                  >Download evidence PDF</a
+                >
+              </div>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="hero-card">
-          <strong>Snapshot of recent work</strong>
-          <ul>
-            <li>Designed and implemented an Enterprise Risk Intelligence Engine for anomaly detection and KRI-based risk scoring.</li>
-            <li>Built a Twitter Topic Classification ML pipeline for thematic analysis of social data.</li>
-            <li>Led NxtAbroad’s digital transformation, CRM modernisation and early AI-backed advisory processes.</li>
-            <li>Contributed to Cyber Essentials security certification at Connected Health in a regulated environment.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      <!-- DETAILED EVIDENCE SECTIONS -->
 
-    <!-- ENTERPRISE RISK INTELLIGENCE ENGINE -->
-    <section id="enterprise-risk" class="section">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Flagship Project</div>
-          <h2 class="section-title">Enterprise Risk Intelligence Engine</h2>
-        </div>
-        <a
-          href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine"
-          class="btn btn-outline"
-          target="_blank"
-          rel="noopener"
-        >
-          View on GitHub
-        </a>
-      </div>
-      <p class="section-subtitle">
-        An AI-powered technology risk and threat detection engine that ingests enterprise system logs, detects
-        anomalies using expert-defined KRIs, scores events, and generates structured risk intelligence reports.
-        Developed collaboratively with a Senior Technology Risk Analyst at CME Group.
-      </p>
-
-      <div class="grid">
-        <article class="card">
-          <div class="card-tagline">Overview</div>
-          <h3 class="card-title">What the system delivers</h3>
-          <p class="card-body">
-            The engine ingests authentication, privilege, network and application events; applies rule-based and
-            KRI-driven detection; and assigns risk scores on a scale from 1 to 10. Events are classified as Low,
-            Medium, High or Critical and reported in a structured HTML risk report suitable for Technology Risk
-            and Security teams.
-          </p>
-          <p class="card-meta">
-            Built with Python using a modular architecture: log ingestion, anomaly detection, risk scoring and reporting.
-          </p>
-          <div class="card-actions">
-            <!-- Update this link to your Enterprise Risk evidence PDF -->
-            <a href="docs/Enterprise_Risk_Intelligence_Engine_Evidence.pdf" class="btn" target="_blank" rel="noopener">
-              Download Evidence Document
-            </a>
+      <!-- Evidence 1 -->
+      <section id="evidence-1">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Evidence 1</div>
+            <h2 class="section-title">NxtAbroad AI – EdTech &amp; Immigration Intelligence Platform</h2>
+            <p class="section-subtitle">
+              Founder-led AI platform that powers my company NxtAbroad Limited. It centralises student evaluation,
+              visa readiness scoring and workflow automation across multiple destinations (UK, Canada, Europe, UAE).
+            </p>
           </div>
-        </article>
 
-        <article class="card">
-          <div class="card-tagline">Role and responsibilities</div>
-          <h3 class="card-title">My leadership in the project</h3>
-          <p class="card-body">
-            I designed the architecture, implemented the detection engine, built the KRI-based scoring logic and the HTML
-            reporting layer, and integrated expert-driven thresholds and KRIs into the system. I also led documentation and
-            verification through GitHub, ensuring the project is auditable and externally verifiable.
-          </p>
-          <ul class="card-body">
-            <li>End-to-end technical ownership of the engine.</li>
-            <li>Collaboration with a Senior Technology Risk Analyst.</li>
-            <li>Preparation of KPMG-standard written evidence and diagrams.</li>
-          </ul>
-        </article>
-      </div>
+          <div class="evidence-detail">
+            <div class="evidence-meta">
+              <strong>Criterion:</strong> Mandatory – Innovation &amp; product-led technical leadership
+            </div>
+            <div class="two-col">
+              <div>
+                <h3>My role &amp; responsibilities</h3>
+                <ul class="detail-list">
+                  <li>Founder &amp; technical architect for NxtAbroad AI.</li>
+                  <li>Designed the rules engine and visa readiness scoring logic.</li>
+                  <li>Implemented Python-based processing of student data and risk indicators.</li>
+                  <li>Led integration into NxtAbroad's day-to-day operations.</li>
+                </ul>
 
-      <div class="project-visuals">
-        <div class="visual-card">
-          <strong>Architecture diagram</strong>
-          <p class="card-body">
-            The engine is structured into four main layers: log ingestion, anomaly detection, risk scoring and
-            reporting. This separation supports scalability, testing, and future ML model upgrades such as
-            clustering or Isolation Forest.
-          </p>
-          <!-- Replace src with your actual architecture image -->
-          <img src="images/enterprise_risk_architecture.png" alt="Enterprise Risk Engine Architecture" />
-          <p class="card-meta">File: images/enterprise_risk_architecture.png</p>
-        </div>
-        <div class="visual-card">
-          <strong>Sample risk report</strong>
-          <p class="card-body">
-            A sample HTML report presents a table of anomalies, with scores, risk levels and reasons. This is designed
-            to mirror risk dashboards used in enterprise Technology Risk and Information Security teams.
-          </p>
-          <!-- Replace src with your risk_report screenshot -->
-          <img src="images/enterprise_risk_report.png" alt="Enterprise Risk Engine Report Screenshot" />
-          <p class="card-meta">File: images/enterprise_risk_report.png</p>
-        </div>
-      </div>
-    </section>
+                <h3>What the system does</h3>
+                <ul class="detail-list">
+                  <li>Collects student profiles, academic history and funding details.</li>
+                  <li>Applies country-specific rules to assess eligibility and risk.</li>
+                  <li>Scores visa readiness (e.g. strong / borderline / at-risk).</li>
+                  <li>Provides structured workflows for consultants to act on.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Why this shows leadership &amp; innovation</h3>
+                <ul class="detail-list">
+                  <li>Transforms a manual advisory process into a structured, data-driven engine.</li>
+                  <li>Reduces errors, improves consistency and speeds up decisions.</li>
+                  <li>Shows that I can identify a real-world problem and build a product around it.</li>
+                  <li>Directly supports the scaling of NxtAbroad as a company.</li>
+                </ul>
 
-    <!-- KEY PROJECTS -->
-    <section id="projects" class="section">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Selected Projects</div>
-          <h2 class="section-title">Additional Tech Nation Evidence Projects</h2>
-        </div>
-      </div>
-      <p class="section-subtitle">
-        In addition to the Enterprise Risk Intelligence Engine, I have delivered projects that demonstrate applied ML,
-        digital transformation leadership and practical cybersecurity work in regulated environments.
-      </p>
+                <div class="pill-row">
+                  <span class="pill green">Product founder</span>
+                  <span class="pill">Python · Rules Engine</span>
+                  <span class="pill">Scikit-learn (for readiness models)</span>
+                </div>
 
-      <div class="grid">
-        <!-- Twitter Topic Classifier -->
-        <article class="card">
-          <div class="card-tagline">Machine Learning · Natural Language Processing</div>
-          <h3 class="card-title">Twitter Topic Classifier</h3>
-          <p class="card-body">
-            A machine learning pipeline that classifies Twitter content into thematic categories such as politics,
-            sport, entertainment and others. The work involved text preprocessing, feature extraction, classifier
-            comparison and evaluation.
-          </p>
-          <p class="card-meta">
-            Demonstrates applied ML engineering and research around unstructured text data and real-time content.
-          </p>
-          <div class="card-actions">
-            <a
-              href="https://github.com/akinyeraakintunde/Twitter-Topic-Classifier-with-ML"
-              class="btn btn-outline"
-              target="_blank"
-              rel="noopener"
-            >
-              View GitHub Repository
-            </a>
-            <!-- Update link -->
-            <a href="docs/Twitter_Topic_Classifier_Evidence.pdf" class="btn btn-outline" target="_blank" rel="noopener">
-              Download Evidence
-            </a>
+                <div class="evidence-links">
+                  <a
+                    href="https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml"
+                    target="_blank"
+                    class="chip-link primary"
+                    >GitHub repo</a
+                  >
+                  <a href="Evidence_1_NxtAbroad_AI_Ibrahim_Akinyera.pdf" target="_blank" class="chip-link"
+                    >Evidence PDF</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-        </article>
+        </div>
+      </section>
 
-        <!-- NxtAbroad AI -->
-        <article class="card">
-          <div class="card-tagline">Digital Transformation · Applied Data and AI</div>
-          <h3 class="card-title">NxtAbroad AI and Digital Transformation</h3>
-          <p class="card-body">
-            Led the design and implementation of scalable processes, CRM workflows and decision-support tools at
-            NxtAbroad, enabling improved client tracking, case management, and data visibility for study abroad
-            and immigration services.
-          </p>
-          <p class="card-meta">
-            Evidence of leadership and innovation in transforming a growing consultancy into a technology-enabled platform.
-          </p>
-          <div class="card-actions">
-            <!-- Update link -->
-            <a href="docs/NxtAbroad_AI_Evidence.pdf" class="btn btn-outline" target="_blank" rel="noopener">
-              Download Evidence
-            </a>
+      <!-- Evidence 3 -->
+      <section id="evidence-3">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Evidence 3</div>
+            <h2 class="section-title">Twitter Topic Classifier – Deep Learning NLP (MSc Dissertation)</h2>
+            <p class="section-subtitle">
+              Advanced NLP project from my MSc Data Science degree at Ulster University. It uses transformer-based models
+              (BERT) to classify tweets into topics such as politics, sports and entertainment.
+            </p>
           </div>
-        </article>
 
-        <!-- Cyber Essentials – Connected Health -->
-        <article class="card">
-          <div class="card-tagline">Cybersecurity · Governance · Compliance</div>
-          <h3 class="card-title">Cyber Essentials Certification – Connected Health</h3>
-          <p class="card-body">
-            At Connected Health, a regulated healthcare organisation, I contributed to the technical preparation and
-            implementation of controls that supported a successful Cyber Essentials certification. This included work
-            on secure configuration, access control, endpoint protection and documentation for audit.
-          </p>
-          <p class="card-body">
-            I supported secure configuration and OS hardening, validated patching and software baselines, reviewed access
-            and privileged accounts, assisted with firewall and endpoint security checks, and helped prepare inventories
-            and evidence of technical controls. This strengthened Connected Health’s security posture and aligned our
-            systems with UK government Cyber Essentials requirements.
-          </p>
-          <p class="card-meta">
-            Demonstrates real-world cybersecurity work, risk reduction and contribution to a formal certification process.
-          </p>
-          <div class="card-actions">
-            <!-- Update link -->
-            <a href="docs/Cyber_Essentials_Evidence.pdf" class="btn btn-outline" target="_blank" rel="noopener">
-              Download Cyber Essentials Evidence
-            </a>
+          <div class="evidence-detail">
+            <div class="evidence-meta">
+              <strong>Criterion:</strong> Optional – Proven technical expertise in complex ML systems
+            </div>
+            <div class="two-col">
+              <div>
+                <h3>Technical scope</h3>
+                <ul class="detail-list">
+                  <li>End-to-end ML: data collection, preprocessing, modelling, evaluation.</li>
+                  <li>Used BERT-based transformers to capture contextual language representations.</li>
+                  <li>Implemented GPU-accelerated training and model optimisation.</li>
+                  <li>Reported macro-F1 scores and detailed confusion matrices.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Why this matters for Global Talent</h3>
+                <ul class="detail-list">
+                  <li>Shows I can work with state-of-the-art AI architectures (transformers).</li>
+                  <li>Demonstrates rigorous experimentation &amp; academic-level reporting.</li>
+                  <li>Forms the foundation for later production NLP systems.</li>
+                </ul>
+                <div class="pill-row">
+                  <span class="pill green">Transformer / BERT</span>
+                  <span class="pill">Python · PyTorch / TensorFlow (as applicable)</span>
+                  <span class="pill">MSc Data Science – Ulster University</span>
+                </div>
+
+                <div class="evidence-links">
+                  <a
+                    href="https://github.com/akinyeraakintunde/Twitter-Topic-Classifier-with-ML"
+                    target="_blank"
+                    class="chip-link primary"
+                    >GitHub repo</a
+                  >
+                  <a href="Evidence_3_Twitter_Topic_Classifier_Ibrahim_Akinyera.pdf" target="_blank" class="chip-link"
+                    >Evidence PDF</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- TECH NATION EVIDENCE HUB -->
-    <section id="evidence" class="section">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Evidence Bundle</div>
-          <h2 class="section-title">Tech Nation Evidence Hub</h2>
         </div>
-      </div>
-      <p class="section-subtitle">
-        Centralised access to the documents and outputs submitted as part of my UK Global Talent endorsement application.
-        Documents are structured to match the mandatory and optional evidence categories described in the Tech Nation guidance.
-      </p>
+      </section>
 
-      <div class="evidence-list">
-        <div class="evidence-item">
-          <div class="evidence-name">Mandatory Evidence 1 – Enterprise Risk Intelligence Engine</div>
-          <p>
-            Full 12–15 page evidence report covering architecture, detection logic, KRI-based scoring, expert
-            collaboration and sample risk reports, written in a professional, audit-ready format.
-          </p>
-          <!-- Update link -->
-          <a href="docs/Enterprise_Risk_Intelligence_Engine_Evidence.pdf" target="_blank" rel="noopener">
-            Download Evidence PDF
-          </a>
+      <!-- Evidence 4 -->
+      <section id="evidence-4">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Evidence 4</div>
+            <h2 class="section-title">Enterprise Risk Intelligence Engine – AI + Cybersecurity</h2>
+            <p class="section-subtitle">
+              An AI-powered system that ingests logs, detects anomalies using machine learning, scores enterprise risk
+              using Key Risk Indicators (KRIs), and generates structured risk reports. Built in collaboration with
+              <strong>Mr. Busayo Odukoya</strong>, a Senior Technology Risk Analyst at CME Group.
+            </p>
+          </div>
+
+          <div class="evidence-detail">
+            <div class="evidence-meta">
+              <strong>Criterion:</strong> Optional – Proven technical expertise (AI, security &amp; risk)
+            </div>
+            <div class="two-col">
+              <div>
+                <h3>System design &amp; architecture</h3>
+                <ul class="detail-list">
+                  <li>Modular architecture: anomaly detection, risk scoring, pipeline orchestration, reporting.</li>
+                  <li>Uses Isolation Forest for anomaly detection on derived log features.</li>
+                  <li>Risk scores are derived from KRIs such as failed logins, malicious IPs and anomaly flags.</li>
+                  <li>Outputs detailed text or HTML risk reports for audit and security teams.</li>
+                </ul>
+
+                <h3>Collaboration with CME Group risk expert</h3>
+                <ul class="detail-list">
+                  <li>
+                    Domain input from <strong>Mr. Busayo Odukoya</strong>, Senior Technology Risk Analyst at CME Group.
+                  </li>
+                  <li>KRIs, thresholds and taxonomies aligned with real-world financial-sector practices.</li>
+                  <li>Long-term mentor–mentee relationship since 2012 from Fountain University.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Why this evidence is strong</h3>
+                <ul class="detail-list">
+                  <li>Shows advanced AI/ML engineering applied to cybersecurity &amp; governance.</li>
+                  <li>Demonstrates enterprise-level thinking and collaboration with a senior industry expert.</li>
+                  <li>Highly relevant to UK priorities in cyber, AI and digital risk.</li>
+                </ul>
+
+                <div class="pill-row">
+                  <span class="pill green">AI + Cybersecurity</span>
+                  <span class="pill">Isolation Forest · Python</span>
+                  <span class="pill">Enterprise Risk &amp; KRI Modelling</span>
+                </div>
+
+                <div class="evidence-links">
+                  <a
+                    href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine"
+                    target="_blank"
+                    class="chip-link primary"
+                    >GitHub repo</a
+                  >
+                  <a
+                    href="Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf"
+                    target="_blank"
+                    class="chip-link"
+                    >Evidence PDF</a
+                  >
+                  <a href="TECH_NATION_EVIDENCE.html" class="chip-link"
+                    >Tech Nation explanation (repo version)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="evidence-item">
-          <div class="evidence-name">Mandatory Evidence 2 – Twitter Topic Classifier ML Project</div>
-          <p>
-            Technical evidence summarising the end-to-end ML pipeline, model choices, evaluation metrics and how
-            the project relates to building production-ready data and AI systems.
-          </p>
-          <!-- Update link -->
-          <a href="docs/Twitter_Topic_Classifier_Evidence.pdf" target="_blank" rel="noopener">
-            Download Evidence PDF
-          </a>
+      <!-- Evidence 5 -->
+      <section id="evidence-5">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Evidence 5</div>
+            <h2 class="section-title">Cyber Essentials PLUS – Connected Health (Belfast)</h2>
+            <p class="section-subtitle">
+              Evidence of my technical contribution to <strong>Connected Health</strong>, one of Northern Ireland’s largest
+              homecare providers, in achieving its first <strong>Cyber Essentials PLUS</strong> certification.
+            </p>
+          </div>
+
+          <div class="evidence-detail">
+            <div class="evidence-meta">
+              <strong>Criterion:</strong> Optional – Recognition for work beyond normal duties
+            </div>
+            <div class="two-col">
+              <div>
+                <h3>My contribution</h3>
+                <ul class="detail-list">
+                  <li>Supported device and endpoint audits across staff laptops.</li>
+                  <li>Checked OS patch levels, anti-malware, firewall rules and port restrictions.</li>
+                  <li>Helped validate MFA rollout and user access alignment with least-privilege principles.</li>
+                  <li>Prepared technical evidence (screenshots, logs, configuration summaries) for the assessor.</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Recognition &amp; impact</h3>
+                <ul class="detail-list">
+                  <li>Received direct management recognition card thanking me for my contribution.</li>
+                  <li>Worked hands-on in a UK organisation handling sensitive personal and health data.</li>
+                  <li>Demonstrates trust, responsibility and security-focused thinking.</li>
+                </ul>
+                <div class="pill-row">
+                  <span class="pill green">Cyber Essentials PLUS</span>
+                  <span class="pill">Endpoint &amp; MFA Security</span>
+                  <span class="pill">Process &amp; Audit Support</span>
+                </div>
+
+                <div class="evidence-links">
+                  <a
+                    href="https://github.com/akinyeraakintunde/connected-health-cyber-essentials-plus"
+                    target="_blank"
+                    class="chip-link primary"
+                    >GitHub repo</a
+                  >
+                  <a
+                    href="Evidence_5_Cyber_Essentials_Ibrahim_Akinyera.pdf"
+                    target="_blank"
+                    class="chip-link"
+                    >Evidence PDF</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="evidence-item">
-          <div class="evidence-name">Mandatory Evidence 3 – NxtAbroad AI and Digital Transformation</div>
-          <p>
-            Evidence of leadership and innovation in designing processes, systems and tooling that underpin NxtAbroad’s
-            operations, demonstrating product thinking and operational impact.
-          </p>
-          <!-- Update link -->
-          <a href="docs/NxtAbroad_AI_Evidence.pdf" target="_blank" rel="noopener">
-            Download Evidence PDF
-          </a>
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Contact</div>
+            <h2 class="section-title">Let’s connect</h2>
+            <p class="section-subtitle">
+              I am open to collaboration, advisory conversations, and roles at the intersection of AI, cybersecurity,
+              EdTech and digital transformation.
+            </p>
+          </div>
+
+          <div class="contact-card">
+            <p><strong>Name:</strong> Ibrahim Akintunde Akinyera</p>
+            <p><strong>Email:</strong> <a href="mailto:akinyeraakintunde@gmail.com">akinyeraakintunde@gmail.com</a></p>
+            <p>
+              <strong>GitHub:</strong>
+              <a href="https://github.com/akinyeraakintunde" target="_blank">github.com/akinyeraakintunde</a>
+            </p>
+            <p>
+              <strong>LinkedIn:</strong>
+              <a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank"
+                >linkedin.com/in/ibrahimakinyera</a
+              >
+            </p>
+            <p>
+              <strong>Company:</strong> Founder &amp; Managing Director – NxtAbroad Limited (Education &amp; Travel
+              Consultancy)
+            </p>
+          </div>
         </div>
-
-        <div class="evidence-item">
-          <div class="evidence-name">Optional Evidence – Cyber Essentials Certification (Connected Health)</div>
-          <p>
-            Documentation of my contribution to Cyber Essentials security certification, including secure configuration,
-            access control, firewall and endpoint security measures and preparation for audit.
-          </p>
-          <!-- Update link -->
-          <a href="docs/Cyber_Essentials_Evidence.pdf" target="_blank" rel="noopener">
-            Download Evidence PDF
-          </a>
-        </div>
-
-        <div class="evidence-item">
-          <div class="evidence-name">Optional Evidence – GitHub and Open Source Activity</div>
-          <p>
-            Summary of my public repositories, ongoing contributions, and engineering work across AI, data and tooling,
-            presented as supporting evidence of continuous technical engagement.
-          </p>
-          <!-- Update link -->
-          <a href="docs/GitHub_Activity_Evidence.pdf" target="_blank" rel="noopener">
-            Download Evidence PDF
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- LATEST GITHUB WORK -->
-    <section id="github" class="section">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Live Engineering Activity</div>
-          <h2 class="section-title">Latest GitHub Work</h2>
-        </div>
-        <a href="https://github.com/akinyeraakintunde" class="btn btn-outline" target="_blank" rel="noopener">
-          View GitHub Profile
-        </a>
-      </div>
-      <p class="section-subtitle">
-        This section automatically retrieves my latest public repositories from GitHub, highlighting ongoing engineering
-        activity and recent work across AI, data and tooling.
-      </p>
-
-      <div id="github-projects" class="github-list">
-        <p class="card-meta">Loading latest repositories from GitHub…</p>
-      </div>
-    </section>
-
-    <!-- CV / CONTACT -->
-    <section id="cv" class="section">
-      <div class="section-header">
-        <div>
-          <div class="section-kicker">Profile and Contact</div>
-          <h2 class="section-title">Curriculum Vitae and Contact</h2>
-        </div>
-      </div>
-      <p class="section-subtitle">
-        A complete CV summarising my experience in AI/ML engineering, cybersecurity, technology risk and digital
-        transformation is available below, alongside direct links to my LinkedIn profile.
-      </p>
-      <div class="hero-actions" style="margin-top: 10px;">
-        <!-- Update this CV link -->
-        <a href="Ibrahim_Akinyera_CV.pdf" class="btn" target="_blank" rel="noopener">Download Full CV</a>
-        <a
-          href="https://www.linkedin.com/in/ibrahimakinyera"
-          class="btn btn-outline"
-          target="_blank"
-          rel="noopener"
-        >
-          View LinkedIn Profile
-        </a>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer>
-      <p>
-        Built and maintained by Ibrahim Akinyera. This portfolio is designed to present verifiable engineering work
-        in support of the UK Global Talent application and to highlight impact in AI, cybersecurity and technology risk.
-      </p>
+      <div class="container">
+        <div>© <span id="year"></span> Ibrahim Akintunde Akinyera. All rights reserved.</div>
+        <div style="margin-top:0.25rem;">
+          <a href="#overview" class="anchor-link">Back to top ↑</a>
+        </div>
+      </div>
     </footer>
   </div>
 
-  <!-- GitHub API fetch for latest repos -->
   <script>
-    async function loadLatestRepos() {
-      const container = document.getElementById("github-projects");
-      try {
-        const response = await fetch(
-          "https://api.github.com/users/akinyeraakintunde/repos?sort=updated&per_page=6"
-        );
-        if (!response.ok) {
-          throw new Error("GitHub API error");
-        }
-        const repos = await response.json();
-        if (!Array.isArray(repos) || repos.length === 0) {
-          container.innerHTML = "<p class='card-meta'>No public repositories found.</p>";
-          return;
-        }
-        container.innerHTML = "";
-        repos.forEach((repo) => {
-          const div = document.createElement("div");
-          div.className = "github-item";
-          div.innerHTML = `
-            <div class="github-name">
-              <a href="${repo.html_url}" target="_blank" rel="noopener">${repo.name}</a>
-            </div>
-            <div class="github-meta">
-              ${repo.description ? repo.description : "No description provided."}
-            </div>
-            <div class="github-meta">
-              Updated: ${new Date(repo.updated_at).toLocaleDateString()} · Stars: ${repo.stargazers_count}
-            </div>
-          `;
-          container.appendChild(div);
-        });
-      } catch (e) {
-        container.innerHTML =
-          "<p class='card-meta'>Unable to load repositories from GitHub at this time.</p>";
-      }
-    }
-
-    loadLatestRepos();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
