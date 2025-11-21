@@ -8,215 +8,282 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header / Hero -->
+    <!-- Top Navigation -->
     <header class="site-header">
-        <div class="container">
-            <h1 class="site-title">Ibrahim Akintunde Akinyera</h1>
-            <p class="site-subtitle">
-                Founder · Machine Learning Engineer · Cybersecurity & Risk Analytics (UK / Nigeria)
-            </p>
-            <p class="site-tagline">
-                I build AI-driven systems for cybersecurity, risk intelligence, and international education.
-            </p>
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="brand-mark">IA</span>
+                <div>
+                    <h1 class="brand-name">Ibrahim A. Akinyera</h1>
+                    <p class="brand-tagline">Founder · Machine Learning · Cybersecurity & Risk Analytics</p>
+                </div>
+            </div>
             <nav class="main-nav">
                 <a href="#about">About</a>
                 <a href="#evidence-hub">Tech Nation Evidence</a>
-                <a href="#projects">Projects</a>
+                <a href="#projects">Key Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
     </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-text">
+                <p class="hero-kicker">Global Talent · Digital Technology</p>
+                <h2 class="hero-title">
+                    Building AI-, risk- and security-driven systems across the UK and Nigeria.
+                </h2>
+                <p class="hero-subtitle">
+                    I am a Founder and Machine Learning Engineer focused on cybersecurity, risk intelligence,
+                    and international education technology. This portfolio showcases my core technical evidence,
+                    systems I have designed, and the products I lead.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#evidence-hub">View Tech Nation Evidence</a>
+                    <a class="btn btn-outline" href="https://github.com/akinyeraakintunde" target="_blank">View GitHub Profile</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-label">Core Domains</span>
+                        <span class="stat-value">ML · Cybersecurity · Risk Analytics</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Operating From</span>
+                        <span class="stat-value">UK / Nigeria</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Founder</span>
+                        <span class="stat-value">NxtAbroad Limited</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-panel">
+                <div class="hero-panel-header">Evidence Snapshot</div>
+                <ul class="hero-panel-list">
+                    <li><span class="badge badge-strong">Evidence 1</span> NxtAbroad AI – Visa Readiness & Eligibility Engine</li>
+                    <li><span class="badge badge-strong">Evidence 2</span> Network Intrusion Detection ML (IDS)</li>
+                    <li><span class="badge badge-strong">Evidence 3</span> Twitter Topic Classifier (MSc NLP)</li>
+                    <li><span class="badge badge-strong">Evidence 4</span> Enterprise Risk Intelligence Engine</li>
+                    <li><span class="badge badge-strong">Evidence 5</span> Cyber Essentials PLUS (Connected Health)</li>
+                </ul>
+                <p class="hero-panel-note">
+                    Each evidence set is backed by a dedicated GitHub repository, PDF evidence document,
+                    and architecture diagrams.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="section section-light">
         <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am a Founder, Machine Learning Engineer, and Data Scientist with experience across:
-            </p>
-            <ul>
-                <li>Artificial Intelligence and Machine Learning</li>
-                <li>Cybersecurity and Enterprise Risk Analytics</li>
-                <li>Python-based software and API engineering</li>
-                <li>EdTech and immigration workflow automation</li>
-                <li>Digital transformation through my company, NxtAbroad Limited</li>
-            </ul>
-            <p>
-                This portfolio showcases my technical projects and formal evidence submitted for the
-                UK Global Talent Visa – Digital Technology route.
-            </p>
+            <h2 class="section-title">About Ibrahim</h2>
+            <div class="two-column">
+                <div>
+                    <p>
+                        I am a technology founder and machine learning engineer with experience across AI, cybersecurity,
+                        and risk analytics. I build systems that sit at the intersection of:
+                    </p>
+                    <ul class="list-check">
+                        <li>Machine learning and applied data science</li>
+                        <li>Network and application security, anomaly detection</li>
+                        <li>Risk scoring, compliance, and governance</li>
+                        <li>EdTech and visa/immigration decision-support tooling</li>
+                        <li>Product leadership as Founder of NxtAbroad Limited</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        This portfolio is focused on my UK Global Talent (Tech Nation) evidence, but the projects
+                        listed here are also real systems I designed and built to solve practical problems for
+                        businesses and students. Each repository contains runnable code, documentation, and
+                        evidence PDFs where applicable.
+                    </p>
+                    <p>
+                        My goal is to keep building robust, explainable, high-impact systems that improve security,
+                        decision-making, and access to international opportunities.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Tech Nation Evidence Hub -->
     <section id="evidence-hub" class="section section-dark">
         <div class="container">
-            <h2>Tech Nation Evidence Hub</h2>
-            <p>
-                Below are my core evidence projects, each backed by a dedicated GitHub repository,
-                architecture diagrams, and evidence PDFs.
+            <h2 class="section-title section-title-light">Tech Nation Evidence Hub</h2>
+            <p class="section-intro">
+                The following are my core evidence projects mapped to the Tech Nation (Global Talent – Digital Technology)
+                criteria. Each project is represented by a GitHub repository with a formal evidence document in PDF format.
             </p>
 
             <div class="cards-grid">
                 <!-- Evidence 1 – NxtAbroad AI -->
-                <article class="card">
-                    <h3>Evidence 1 – NxtAbroad AI (Founder-Led Innovation)</h3>
+                <article class="card card-evidence">
+                    <div class="card-header">
+                        <span class="badge badge-evidence">Evidence 1 – Mandatory Criterion</span>
+                    </div>
+                    <h3>NxtAbroad AI – Visa Readiness & Eligibility Engine</h3>
                     <p>
-                        An internal visa readiness and eligibility intelligence engine used at
-                        NxtAbroad Limited to standardise student evaluation across the UK and Nigeria.
+                        An internal intelligence engine used at NxtAbroad Limited to consistently assess student
+                        eligibility, financial readiness, documentation quality, and credibility for international
+                        study routes (UK, Canada, EU, UAE).
                     </p>
-                    <ul>
-                        <li>Rules-driven scoring of academic, financial, documentation, and credibility factors</li>
-                        <li>Used on hundreds of real student profiles</li>
-                        <li>Supports multiple destinations (UK, Canada, EU, UAE)</li>
+                    <ul class="card-list">
+                        <li>Founder-led product: designed and implemented for NxtAbroad operations</li>
+                        <li>Rules-based scoring across academic, financial, documentation, credibility dimensions</li>
+                        <li>Used on hundreds of profiles to reduce avoidable refusals and standardise decisions</li>
                     </ul>
-                    <p>
-                        <a href="https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml" target="_blank">
-                            View NxtAbroad AI Repository
-                        </a>
-                        <br>
-                        <span class="small-note">
-                            Evidence PDF available in the repository (Evidence_1_NxtAbroad_AI_Ibrahim_Akinyera.pdf).
-                        </span>
+                    <p class="card-links">
+                        <a href="https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml" target="_blank">View repository</a>
+                        <span>· Evidence_1 PDF inside repo</span>
                     </p>
                 </article>
 
-                <!-- Evidence 2 – Network Intrusion Detection ML (IDS) -->
-                <article class="card">
-                    <h3>Evidence 2 – Network Intrusion Detection (ML IDS)</h3>
+                <!-- Evidence 2 – IDS -->
+                <article class="card card-evidence">
+                    <div class="card-header">
+                        <span class="badge badge-evidence">Evidence 2 – Technical Contribution</span>
+                    </div>
+                    <h3>Network Intrusion Detection – ML IDS</h3>
                     <p>
-                        A machine learning–based Intrusion Detection System (IDS) trained on the NSL-KDD dataset,
-                        with a full pipeline from preprocessing to model evaluation, API, and dashboard.
+                        A full machine learning–based Intrusion Detection System (IDS) using the NSL-KDD dataset,
+                        including preprocessing, model training, ROC analysis, FastAPI service, and dashboard.
                     </p>
-                    <ul>
-                        <li>End-to-end ML pipeline with Random Forest classifier</li>
-                        <li>FastAPI prediction service and Postman collection</li>
-                        <li>ROC curve, architecture diagrams, and model card</li>
+                    <ul class="card-list">
+                        <li>End-to-end ML pipeline with documented preprocessing and modelling</li>
+                        <li>FastAPI prediction API and Postman collection</li>
+                        <li>Model card, ROC curve, and architecture diagrams included</li>
                     </ul>
-                    <p>
-                        <a href="https://github.com/akinyeraakintunde/network-intrusion-detection-ml" target="_blank">
-                            View Network Intrusion Detection ML Repository
-                        </a>
-                        <br>
-                        <span class="small-note">
-                            Evidence PDF and model documentation available in the repository.
-                        </span>
+                    <p class="card-links">
+                        <a href="https://github.com/akinyeraakintunde/network-intrusion-detection-ml" target="_blank">View repository</a>
+                        <span>· Evidence 3 PDF and model docs inside repo</span>
                     </p>
                 </article>
 
                 <!-- Evidence 3 – Twitter Topic Classifier -->
-                <article class="card">
-                    <h3>Evidence 3 – Twitter Topic Classifier (NLP, MSc)</h3>
+                <article class="card card-evidence">
+                    <div class="card-header">
+                        <span class="badge badge-evidence">Evidence 3 – Supporting (Academic / NLP)</span>
+                    </div>
+                    <h3>Twitter Topic Classifier – NLP (MSc)</h3>
                     <p>
-                        A thematic text classification project developed as part of my MSc in Data Science,
-                        focused on automatically categorising Twitter content into key themes.
+                        A thematic text classifier developed during my MSc in Data Science, focused on assigning
+                        Twitter content to topics (e.g. politics, health, sports, entertainment) using ML/NLP.
                     </p>
-                    <ul>
-                        <li>End-to-end text preprocessing and feature engineering</li>
-                        <li>Supervised ML classification for topic prediction</li>
-                        <li>Demonstrates applied NLP and model evaluation</li>
+                    <ul class="card-list">
+                        <li>End-to-end preprocessing, feature extraction and classification</li>
+                        <li>Demonstrates NLP, supervised learning and evaluation</li>
+                        <li>Used as academic and technical support evidence</li>
                     </ul>
-                    <p>
-                        <a href="https://github.com/akinyeraakintunde/Twitter-Topic-Classifier-with-ML" target="_blank">
-                            View Twitter Topic Classifier Repository
-                        </a>
-                        <br>
-                        <span class="small-note">
-                            Used as supporting academic/technical evidence.
-                        </span>
+                    <p class="card-links">
+                        <a href="https://github.com/akinyeraakintunde/Twitter-Topic-Classifier-with-ML" target="_blank">View repository</a>
+                        <span>· MSc project, summarised for Tech Nation</span>
                     </p>
                 </article>
 
                 <!-- Evidence 4 – Enterprise Risk Intelligence Engine -->
-                <article class="card">
-                    <h3>Evidence 4 – Enterprise Risk Intelligence Engine</h3>
+                <article class="card card-evidence">
+                    <div class="card-header">
+                        <span class="badge badge-evidence">Evidence 4 – Technical Contribution</span>
+                    </div>
+                    <h3>Enterprise Risk Intelligence Engine</h3>
                     <p>
-                        A hybrid anomaly detection and risk scoring engine for SMEs and digital businesses,
-                        combining ML-based anomaly detection with KRI-based scoring and narrative reporting.
+                        A hybrid anomaly detection and KRI-based scoring engine for SMEs and digital businesses,
+                        used to evaluate log data, detect unusual behaviour, and generate explainable risk reports.
                     </p>
-                    <ul>
-                        <li>Isolation Forest anomaly detection over system logs</li>
-                        <li>KRI-driven risk scoring model and risk bands</li>
-                        <li>Reviewed by Busayo Odukoya (Senior Technology Risk Analyst, CME Group)</li>
+                    <ul class="card-list">
+                        <li>Isolation Forest–based anomaly detection over system logs</li>
+                        <li>Weighted KRI scoring model with risk bands and narrative explanation</li>
+                        <li>Domain review by Busayo Odukoya (Senior Technology Risk Analyst, CME Group)</li>
                     </ul>
-                    <p>
-                        <a href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine" target="_blank">
-                            View Enterprise Risk Intelligence Engine Repository
-                        </a>
-                        <br>
-                        <span class="small-note">
-                            Evidence_4_Enterprise_Risk_Intelligence_Engine_Ibrahim_Akinyera.pdf included in the repository.
-                        </span>
+                    <p class="card-links">
+                        <a href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine" target="_blank">View repository</a>
+                        <span>· Evidence_4 PDF inside repo</span>
                     </p>
                 </article>
 
-                <!-- Evidence 5 – Cyber Essentials PLUS (Connected Health) -->
-                <article class="card">
-                    <h3>Evidence 5 – Cyber Essentials PLUS (Connected Health)</h3>
+                <!-- Evidence 5 – Cyber Essentials PLUS -->
+                <article class="card card-evidence">
+                    <div class="card-header">
+                        <span class="badge badge-evidence">Evidence 5 – Significant Contribution</span>
+                    </div>
+                    <h3>Cyber Essentials PLUS – Connected Health</h3>
                     <p>
-                        Documentation of my technical contribution to helping a UK health organisation
-                        achieve Cyber Essentials PLUS certification, focusing on security controls,
-                        remediation, and audit preparation.
+                        Evidence of my contribution to helping a UK health organisation achieve Cyber Essentials PLUS
+                        certification, focusing on security controls, remediation, documentation and audit support.
                     </p>
-                    <ul>
-                        <li>Support for security hardening and evidence preparation</li>
-                        <li>Collaboration with internal technical teams and external assessors</li>
-                        <li>Demonstrates practical cybersecurity and compliance experience</li>
+                    <ul class="card-list">
+                        <li>Support for security hardening and technical control assessment</li>
+                        <li>Worked alongside internal teams and external assessors</li>
+                        <li>Demonstrates applied cybersecurity and compliance capability</li>
                     </ul>
-                    <p>
-                        <a href="https://github.com/akinyeraakintunde/connected-health-cyber-essentials-plus" target="_blank">
-                            View Connected Health Cyber Essentials Repository
-                        </a>
-                        <br>
-                        <span class="small-note">
-                            Evidence documents and reference letter available in the repository.
-                        </span>
+                    <p class="card-links">
+                        <a href="https://github.com/akinyeraakintunde/connected-health-cyber-essentials-plus" target="_blank">View repository</a>
+                        <span>· Evidence documents and reference letter inside repo</span>
                     </p>
                 </article>
             </div>
         </div>
     </section>
 
-    <!-- Additional Projects Section -->
+    <!-- Other Projects Section -->
     <section id="projects" class="section section-light">
         <div class="container">
-            <h2>Additional Technical Projects</h2>
-            <p>
-                Beyond my primary evidence projects, I maintain and contribute to several other repositories
-                in AI, ML, cybersecurity, and EdTech. You can view my full project list on GitHub.
-            </p>
-            <p>
-                <a href="https://github.com/akinyeraakintunde" target="_blank">
-                    View all repositories on GitHub
-                </a>
-            </p>
+            <h2 class="section-title">Other Technical Work</h2>
+            <div class="two-column">
+                <div>
+                    <p>
+                        Beyond my core Tech Nation evidence, I maintain other repositories and experiments in:
+                    </p>
+                    <ul class="list-check">
+                        <li>API design and backend services in Python</li>
+                        <li>Data pipelines, dashboards, and analytical tooling</li>
+                        <li>Security and risk analytics prototypes</li>
+                        <li>EdTech and immigration automation concepts</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        You can explore my broader work and smaller experiments on GitHub. These projects show how
+                        I think about system design, real-world constraints, and packaging work for other engineers
+                        and stakeholders.
+                    </p>
+                    <p>
+                        <a class="btn btn-outline" href="https://github.com/akinyeraakintunde" target="_blank">Browse all repositories</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section section-dark">
         <div class="container">
-            <h2>Contact</h2>
-            <p>If you would like to discuss collaboration, roles, or partnerships, you can reach me via:</p>
-            <ul>
-                <li>Email: <a href="mailto:akinyeraakintunde@gmail.com">akinyeraakintunde@gmail.com</a></li>
-                <li>GitHub: <a href="https://github.com/akinyeraakintunde" target="_blank">github.com/akinyeraakintunde</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank">linkedin.com/in/ibrahimakinyera</a></li>
+            <h2 class="section-title section-title-light">Contact & Collaboration</h2>
+            <p class="section-intro">
+                I am open to discussing roles, collaborations, advisory opportunities, and partnerships in areas such as
+                ML engineering, cybersecurity analytics, risk platforms, and international education technology.
+            </p>
+            <ul class="contact-list">
+                <li><strong>Email:</strong> <a href="mailto:akinyeraakintunde@gmail.com">akinyeraakintunde@gmail.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/akinyeraakintunde" target="_blank">github.com/akinyeraakintunde</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank">linkedin.com/in/ibrahimakinyera</a></li>
             </ul>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="site-footer">
-        <div class="container">
-            <p>
-                © <span id="year"></span> Ibrahim Akintunde Akinyera · Global Talent (Tech) Portfolio
-            </p>
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Ibrahim Akintunde Akinyera · Global Talent (Tech) Portfolio</p>
         </div>
     </footer>
 
     <script>
-        // Simple script to keep the year current
+        // Keep year current
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
