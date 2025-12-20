@@ -4,6 +4,7 @@ Belfast, UK • Open to Agent Engineer / AI Engineer roles
 
 [Portfolio](https://akinyeraakintunde.github.io/Ibrahim-Akinyera) • [LinkedIn](https://www.linkedin.com/in/ibrahimakinyera) • [GitHub](https://github.com/akinyeraakintunde)
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-NxtAbroad%20AI-2ea44f)](https://nxtabroad-ai-demo.onrender.com/docs)
 ---
 
 ## What I do
