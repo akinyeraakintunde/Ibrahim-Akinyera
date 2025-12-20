@@ -1,95 +1,70 @@
-# Ibrahim Akintunde Akinyera – Global Talent (Tech) Portfolio
+# Ibrahim Akintunde Akinyera
+**AI/ML Engineer • Cybersecurity / Risk Engineering • AI Agent Builder**  
+Belfast, UK • Open to Agent Engineer / AI Engineer roles
 
-This repository contains my **public online portfolio** used to showcase my work, technical achievements,  
-and evidence submitted for the **UK Global Talent Visa – Digital Technology** route.
-
-🌍 **Live Portfolio Website:**  
-👉 https://akinyeraakintunde.github.io/Ibrahim-Akinyera/
+[Portfolio](https://akinyeraakintunde.github.io/Ibrahim-Akinyera) • [LinkedIn](https://www.linkedin.com/in/ibrahimakinyera) • [GitHub](https://github.com/akinyeraakintunde)
 
 ---
 
-## 🔥 About Me
-I am a **Founder, Machine Learning Engineer, and Data Scientist** working across:
+## What I do
+I build **production-style AI systems** that combine:
+- **AI agents + orchestration** (routing, retrieval, validation, guardrails)
+- **FastAPI services** (clean contracts, Pydantic schemas, OpenAPI)
+- **Security & risk engineering** (controls, auditing, governance-minded design)
 
-- Artificial Intelligence (AI & ML)
-- Cybersecurity & Enterprise Risk
-- Software engineering (Python)
-- EdTech & Immigration workflow automation
-- Digital transformation (NxtAbroad Limited – Founder & MD)
-
-I build AI-driven systems that solve real operational challenges across education, cyber risk, and automation.
+I care about shipping systems that are **demoable**, **testable**, and **explainable** — not just notebooks.
 
 ---
 
-## 📦 What This Portfolio Contains
+## Featured Projects (Live / Recruiter-friendly)
 
-### **🟦 Evidence 1 – NxtAbroad AI (Founder-Led Innovation)**
-AI-powered eligibility & visa readiness engine used inside my company,  
-NxtAbroad Limited.
+### 1) NxtAbroad AI — Visa Readiness Agent (Live Demo)
+Rules-first, explainable scoring agent that produces actionable recommendations.
+- FastAPI + Pydantic + Rules Engine
+- OpenAPI docs + deploy-ready setup
 
-🔗 Repo: https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml
-
----
-
-### **🟩 Evidence 3 – Twitter Topic Classifier (NLP, MSc)**
-A deep learning BERT-based thematic classifier built as part of my MSc in Data Science.
-
-🔗 Repo: https://github.com/akinyeraakintunde/Twitter-Topic-Classifier-with-ML
+**Live Demo:** https://nxtabroad-ai-demo.onrender.com/docs  
+**Repo:** https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml
 
 ---
 
-### **🟨 Evidence 4 – Enterprise Risk Intelligence Engine**
-AI + Cybersecurity + Risk Intelligence system created with support from  
-**Mr. Busayo Odukoya – Senior Technology Risk Analyst, CME Group.**
+### 2) Public Sector AI Platform (Multi-Agent Demo)
+A multi-agent platform skeleton for public sector workflows (ask, audit, retrieval, guardrails).
+- Modular agent design
+- FastAPI service foundation
+- CI/tests workflow enabled
 
-🔗 Repo:  
-https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine
-
----
-
-### **🟥 Evidence 5 – Cyber Essentials PLUS (Connected Health)**
-My technical contribution to achieving Cyber Essentials PLUS certification at a UK organisation.
-
-🔗 Repo:  
-https://github.com/akinyeraakintunde/connected-health-cyber-essentials-plus
+**Repo:** https://github.com/akinyeraakintunde/public-sector-ai-platform
 
 ---
 
-## 📄 Files in This Repository
-This repo contains:
+### 3) Network Intrusion Detection (ML + Security)
+Built an IDS-style ML pipeline and packaged it in an engineering-first structure.
+- Security domain ML (intrusion detection)
+- Evaluation + reproducible workflow
 
-- `index.html` – The full portfolio website
-- Evidence PDFs (when uploaded)
-- Assets used by the GitHub Pages site
-
----
-
-## 👤 Author
-
-**Ibrahim Akintunde Akinyera**  
-Founder | Machine Learning Engineer | Data Scientist  
-
-📧 Email: akinyeraakintunde@gmail.com  
-🔗 GitHub: https://github.com/akinyeraakintunde  
-🔗 LinkedIn: https://www.linkedin.com/in/ibrahimakinyera
+**Repo:** https://github.com/akinyeraakintunde/network-intrusion-detection-ml
 
 ---
 
-## 🚀 Deployment
-The site is automatically published with **GitHub Pages**:
-
-Branch: `main`  
-Path: `/` (root)  
-
----
-
-## ✔ Purpose of This Repository
-This repo serves as a:
-
-- Public-facing **Global Talent Tech Portfolio**
-- Central hub for evidence documents
-- Professional landing page for AI, ML, cybersecurity & EdTech projects
+## Tech I’m strong in
+**Languages:** Python  
+**Backend:** FastAPI, Pydantic, REST APIs, OpenAPI  
+**AI/ML:** Scikit-learn, feature engineering, evaluation, model packaging  
+**Agent Systems:** routing, retrieval patterns, validation, guardrails, structured outputs  
+**Cloud/DevOps:** GitHub Actions, Docker basics, deployment on Render  
+**Security:** risk engineering mindset, controls, compliance-aware engineering
 
 ---
 
-### ⭐ Your README is now FIXED — clean, short and professional.
+## What I’m building next (Roadmap)
+- AI agent “/demo” endpoints for non-technical users (clean JSON summaries)
+- Stronger CI coverage + smoke tests on all demos
+- Optional: Power Platform / Copilot integration demos (workflow automation + AI)
+
+---
+
+## Contact
+If you’re hiring or want a quick demo walkthrough:
+- LinkedIn: https://www.linkedin.com/in/ibrahimakinyera  
+- Email: (add your best email here)
