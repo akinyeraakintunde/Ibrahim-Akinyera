@@ -22,7 +22,7 @@ My work centres on designing and deploying **production-style AI systems** that 
 - risk-aware
 - suitable for real operational environments
 
-I build **end-to-end systems**  from data processing and model logic to APIs, documentation, and live demos — rather than experimental notebooks.
+I build **end-to-end systems**  from data processing and model logic to APIs, documentation, and live demos rather than experimental notebooks.
 
 ---
 
