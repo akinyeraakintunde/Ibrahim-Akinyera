@@ -2,363 +2,377 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ibrahim Akinyera — Portfolio</title>
-  <meta name="description" content="Ibrahim Akinyera — AI/ML, Cybersecurity Monitoring, and IT Risk. Live demos + projects + contact." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Ibrahim Akintunde Akinyera — AI/ML Engineer, Cybersecurity & Risk Engineering. Live demos, applied AI systems, and production-style projects." />
+  <meta name="theme-color" content="#0b1220" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ibrahim Akintunde Akinyera — AI/ML · Cybersecurity · Risk Engineering" />
+  <meta property="og:description" content="Applied AI systems, agent-style services, risk scoring, and security analytics. Live demos and production-style projects." />
+  <meta property="og:type" content="website" />
+
+  <title>Ibrahim Akintunde Akinyera | AI/ML · Cybersecurity · Risk Engineering</title>
 
   <style>
     :root{
-      --bg:#0b0f17;
-      --panel:#0f1624;
-      --text:#e7eefc;
-      --muted:#a8b3c7;
-      --line:rgba(255,255,255,.12);
-      --btn:rgba(255,255,255,.10);
-      --btn2:rgba(255,255,255,.16);
-      --accent:#7aa7ff;
-      --max:1050px;
+      --bg:#0b1220;
+      --card:#111a2c;
+      --text:#eaf0ff;
+      --muted:#b8c1d9;
+      --line:rgba(255,255,255,0.08);
+      --accent:#6ee7b7;
+      --accent2:#60a5fa;
+      --warn:#fbbf24;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius:16px;
+      --max:1100px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
     }
     *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    body{
+      margin:0;
+      font-family:var(--font);
+      background: radial-gradient(900px 600px at 10% -10%, rgba(110,231,183,.16), transparent 60%),
+                  radial-gradient(900px 600px at 90% 0%, rgba(96,165,250,.16), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
     a{color:inherit}
-    .wrap{max-width:var(--max);margin:0 auto;padding:18px 16px 70px}
-    .nav{
-      position:sticky;top:0;z-index:10;
-      backdrop-filter: blur(10px);
-      background:rgba(11,15,23,.72);
-      border-bottom:1px solid var(--line);
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 60px;}
+    header{
+      display:flex; align-items:center; justify-content:space-between; gap:16px;
+      padding:10px 0 20px;
     }
-    .navin{max-width:var(--max);margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
-    .brand{display:flex;flex-direction:column;line-height:1.1}
-    .brand b{font-size:14px;letter-spacing:.2px}
-    .brand span{font-size:12px;color:var(--muted)}
-    .navlinks{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
-    .pill{
-      display:inline-flex;align-items:center;gap:8px;
-      padding:8px 12px;border:1px solid var(--line);border-radius:999px;
-      text-decoration:none;font-size:13px;color:var(--text);
-      background:transparent;
+    .brand{
+      display:flex; flex-direction:column; gap:4px;
     }
-    .pill:hover{border-color:rgba(255,255,255,.22);background:rgba(255,255,255,.03)}
-    .btn{
-      background:var(--btn);
+    .brand h1{margin:0; font-size:20px; letter-spacing:.2px;}
+    .brand p{margin:0; color:var(--muted); font-size:13px;}
+    nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end;}
+    .chip{
+      padding:8px 10px;
       border:1px solid var(--line);
-      border-radius:12px;
-      padding:10px 12px;
+      border-radius:999px;
       text-decoration:none;
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      font-weight:600;
-      font-size:14px;
+      color:var(--muted);
+      font-size:13px;
+      background:rgba(255,255,255,0.02);
     }
-    .btn:hover{background:var(--btn2)}
-    .btn.primary{border-color:rgba(122,167,255,.35);background:rgba(122,167,255,.12)}
-    .btn.primary:hover{background:rgba(122,167,255,.18)}
-    .hero{padding:34px 0 20px;display:grid;grid-template-columns: 1.25fr .75fr;gap:18px}
-    @media (max-width: 860px){ .hero{grid-template-columns:1fr} }
-    .card{
-      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+    .chip:hover{border-color:rgba(255,255,255,0.18); color:var(--text);}
+    .hero{
+      margin-top:14px;
+      padding:26px;
       border:1px solid var(--line);
       border-radius:var(--radius);
-      padding:16px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      box-shadow:var(--shadow);
     }
-    h1{margin:0 0 10px;font-size:34px;letter-spacing:-.6px}
-    .lead{color:var(--muted);margin:0 0 16px;line-height:1.5}
-    .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-    .tag{
-      font-size:12px;
+    .hero h2{margin:0 0 8px; font-size:28px; line-height:1.2;}
+    .hero .sub{margin:0 0 16px; color:var(--muted); max-width:70ch;}
+    .badges{display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 18px;}
+    .badge{
+      border:1px solid var(--line);
       padding:6px 10px;
       border-radius:999px;
-      border:1px solid var(--line);
-      color:var(--muted);
-      background:rgba(255,255,255,.02);
-    }
-    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
-    .col-12{grid-column:span 12}
-    .col-8{grid-column:span 8}
-    .col-6{grid-column:span 6}
-    .col-4{grid-column:span 4}
-    @media (max-width: 860px){
-      .col-8,.col-6,.col-4{grid-column:span 12}
-    }
-    .section{padding:26px 0}
-    .section h2{margin:0 0 10px;font-size:20px;letter-spacing:-.2px}
-    .section p{margin:0 0 12px;color:var(--muted);line-height:1.6}
-    ul{margin:10px 0 0 18px;color:var(--muted);line-height:1.6}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
-    .titleRow{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
-    .titleRow h3{margin:0;font-size:16px}
-    .sub{margin:6px 0 0;color:var(--muted);line-height:1.5}
-    .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
-    .divider{height:1px;background:var(--line);margin:16px 0}
-    .small{font-size:12px;color:var(--muted)}
-    .kbd{
-      font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
       font-size:12px;
-      padding:2px 6px;
-      border:1px solid var(--line);
-      border-radius:8px;
       color:var(--muted);
-      background:rgba(255,255,255,.02)
+      background:rgba(255,255,255,0.02);
     }
-    .footer{padding-top:10px;color:var(--muted);font-size:12px}
+    .cta{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      text-decoration:none;
+      font-weight:600;
+      font-size:14px;
+      background:rgba(255,255,255,0.02);
+    }
+    .btn.primary{
+      border-color:rgba(110,231,183,0.45);
+      background:rgba(110,231,183,0.10);
+    }
+    .btn.primary:hover{background:rgba(110,231,183,0.16)}
+    .btn.secondary{
+      border-color:rgba(96,165,250,0.45);
+      background:rgba(96,165,250,0.10);
+    }
+    .btn.secondary:hover{background:rgba(96,165,250,0.16)}
+    .grid{display:grid; gap:14px; margin-top:18px;}
+    @media(min-width:880px){ .grid.cols2{grid-template-columns:1fr 1fr;} }
+    @media(min-width:980px){ .grid.cols3{grid-template-columns:1fr 1fr 1fr;} }
+
+    section{margin-top:26px;}
+    .section-title{
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+      margin-bottom:10px;
+    }
+    .section-title h3{margin:0; font-size:16px; letter-spacing:.2px;}
+    .section-title p{margin:0; font-size:13px; color:var(--muted);}
+    .card{
+      padding:16px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,0.02);
+      box-shadow: 0 8px 22px rgba(0,0,0,.22);
+    }
+    .card h4{margin:0 0 6px; font-size:15px;}
+    .card p{margin:0 0 12px; color:var(--muted); font-size:13px;}
+    .meta{display:flex; gap:8px; flex-wrap:wrap; margin-top:6px;}
+    .tag{
+      font-size:12px; color:var(--muted);
+      padding:5px 8px; border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(255,255,255,0.01);
+    }
+    .links{display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;}
+    .link{
+      font-size:13px;
+      text-decoration:none;
+      color:var(--text);
+      border-bottom:1px dashed rgba(255,255,255,0.20);
+      padding-bottom:2px;
+    }
+    .link:hover{border-bottom-color:rgba(255,255,255,0.55);}
+
+    .note{
+      border-left:3px solid rgba(251,191,36,0.65);
+      padding:12px 14px;
+      background:rgba(251,191,36,0.06);
+      border-radius:14px;
+      color:var(--muted);
+      font-size:13px;
+    }
+    footer{margin-top:34px; color:var(--muted); font-size:12px; text-align:center;}
+    .tiny{font-size:12px; color:var(--muted);}
   </style>
 </head>
 
 <body>
-  <div class="nav">
-    <div class="navin">
+  <div class="wrap">
+    <header>
       <div class="brand">
-        <b>Ibrahim Akinyera</b>
-        <span>AI/ML • Cybersecurity Monitoring • IT Risk</span>
+        <h1>Ibrahim Akintunde Akinyera</h1>
+        <p>AI/ML Engineer · Cybersecurity & Risk Engineering · Agent-style systems</p>
+      </div>
+      <nav>
+        <a class="chip" href="#demos">Live Demos</a>
+        <a class="chip" href="#projects">Projects</a>
+        <a class="chip" href="#experience">Experience</a>
+        <a class="chip" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h2>Building applied AI systems that turn data into clear decisions.</h2>
+      <p class="sub">
+        I design <strong>production-style AI services</strong> (FastAPI + structured schemas + explainable scoring),
+        with a focus on <strong>risk-aware engineering</strong>, auditability, and real operational use.
+        Based in <strong>Belfast (UK)</strong>.
+      </p>
+
+      <div class="badges">
+        <span class="badge">FastAPI · Pydantic · OpenAPI</span>
+        <span class="badge">Explainable Scoring · Rules Engine</span>
+        <span class="badge">Risk Analytics · KRIs · Governance mindset</span>
+        <span class="badge">Deployment: Render · Docker basics</span>
       </div>
 
-      <div class="navlinks">
-        <a class="pill" href="#demos">Live Demos</a>
-        <a class="pill" href="#projects">Projects</a>
-        <a class="pill" href="#about">About</a>
-        <a class="pill" href="#skills">Skills</a>
-        <a class="pill" href="#contact">Contact</a>
+      <div class="cta">
+        <a class="btn primary" href="https://nxtabroad-ai-demo.onrender.com/docs" target="_blank" rel="noreferrer">
+          ▶ Live Demo: NxtAbroad AI (API Docs)
+        </a>
+        <a class="btn secondary" href="https://enterprise-risk-intelligence-engine.onrender.com" target="_blank" rel="noreferrer">
+          ▶ Live Demo: Enterprise Risk Engine
+        </a>
+        <a class="btn" href="https://github.com/akinyeraakintunde" target="_blank" rel="noreferrer">
+          GitHub Profile
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noreferrer">
+          LinkedIn
+        </a>
       </div>
     </div>
-  </div>
 
-  <div class="wrap">
-    
-    <section class="hero">
-      <div class="card">
-        <h1>Security monitoring → risk signals → clear decisions.</h1>
-        <p class="lead">
-          I build practical tools that turn logs/events into <b>KRIs</b>, anomaly estimates, risk scores,
-          and readable reports helping teams reduce noise and escalate faster.
-        </p>
-
-        <div class="links">
-          
-          <a class="btn primary" href="https://enterprise-risk-intelligence-engine.onrender.com" target="_blank" rel="noopener">Open Live Demo</a>
-          <a class="btn" href="https://github.com/akinyeraakintunde" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-
-        <div class="meta">
-          <span class="tag">Log / Event Analysis</span>
-          <span class="tag">Triage & Escalation</span>
-          <span class="tag">Risk Scoring (KRI)</span>
-          <span class="tag">Anomaly Detection</span>
-          <span class="tag">Narrative Reporting</span>
-        </div>
-
-        <div class="divider"></div>
-
-        <p class="small">
-          Recruiter quick tour: click <span class="kbd">Open Live Demo</span> → upload a CSV → view KRIs + score → download report.
-        </p>
+    <!-- LIVE DEMOS -->
+    <section id="demos">
+      <div class="section-title">
+        <h3>Live Demos</h3>
+        <p>Clickable, recruiter-friendly proof of work</p>
       </div>
 
-      <div class="card">
-        <div class="titleRow">
-          <h3>Currently Featured</h3>
-          <span class="tag">Deployed</span>
-        </div>
-
-        <p class="sub">
-          <b>Enterprise Risk Intelligence Engine (Live)</b><br/>
-          Upload CSV → KRIs + anomaly estimate → risk score → narrative report.
-        </p>
-
-        <div class="links">
-          <a class="btn primary" href="https://enterprise-risk-intelligence-engine.onrender.com" target="_blank" rel="noopener">Live Demo</a>
-          <a class="btn" href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine" target="_blank" rel="noopener">Repo</a>
-        </div>
-
-        <div class="divider"></div>
-
-        <p class="small">
-          Collaboration: Ibrahim Akinyera (AI/ML) × Busayo Odukoya (Technology Risk).<br/>
-          If you want a guided walkthrough, message me on LinkedIn.
-        </p>
-      </div>
-    </section>
-
-    <section id="demos" class="section">
-      <h2>Live Demos</h2>
-      <p>Clickable demos you can test in under 60 seconds.</p>
-
-      <div class="cards">
+      <div class="grid cols2">
         <div class="card">
-          <div class="titleRow">
-            <h3>Enterprise Risk Intelligence Engine (Live)</h3>
+          <h4>NxtAbroad AI — Visa Readiness & Eligibility Agent</h4>
+          <p>
+            A rules-first, explainable scoring service that produces readiness indicators and actionable recommendations.
+            Built with FastAPI + Pydantic + scoring logic designed for clarity and auditability.
+          </p>
+          <div class="meta">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Pydantic</span>
+            <span class="tag">Rules Engine</span>
+            <span class="tag">Explainable Output</span>
+          </div>
+          <div class="links">
+            <a class="link" href="https://nxtabroad-ai-demo.onrender.com/docs" target="_blank" rel="noreferrer">Open Live API Docs</a>
+            <a class="link" href="https://github.com/akinyeraakintunde/nxtabroad-visa-readiness-ml" target="_blank" rel="noreferrer">View Repository</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Enterprise Risk Intelligence Engine</h4>
+          <p>
+            Upload a CSV of events/logs → generate KRIs, anomaly estimate, risk score, and a short narrative report.
+            Designed to reduce noise and support triage, investigation, and escalation.
+          </p>
+          <div class="meta">
+            <span class="tag">Risk Scoring</span>
+            <span class="tag">KRIs</span>
+            <span class="tag">Narrative Report</span>
             <span class="tag">Streamlit</span>
           </div>
-          <p class="sub">
-            Upload logs/events in CSV format → compute KRIs + anomaly estimate → generate a risk score (0–100) and a narrative summary.
-          </p>
-          <ul>
-            <li>Fast triage support (reduce noise)</li>
-            <li>Clear next-step recommendations</li>
-            <li>Downloadable report</li>
-          </ul>
           <div class="links">
-            <a class="btn primary" href="https://enterprise-risk-intelligence-engine.onrender.com" target="_blank" rel="noopener">Open Demo</a>
-            <a class="btn" href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine" target="_blank" rel="noopener">GitHub Repo</a>
+            <a class="link" href="https://enterprise-risk-intelligence-engine.onrender.com" target="_blank" rel="noreferrer">Open Live Demo</a>
+            <a class="link" href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine" target="_blank" rel="noreferrer">View Repository</a>
           </div>
-        </div>
-
-        <div class="card">
-          <div class="titleRow">
-            <h3>NxtAbroad AI (Visa Readiness)</h3>
-            <span class="tag">Case Study</span>
-          </div>
-          <p class="sub">
-            AI-assisted readiness checks and structured guidance for applicants designed to reduce mistakes and improve preparation quality.
+          <p class="tiny" style="margin-top:10px;">
+            Built with Busayo Odukoya (Technology Risk) as a collaboration on applied risk engineering.
           </p>
-          <ul>
-            <li>Document sanity checks (structure + completeness)</li>
-            <li>Eligibility-style triage workflow</li>
-            <li>Explainable outputs (what to fix next)</li>
-          </ul>
-          <div class="links">
-            <a class="btn" href="https://github.com/akinyeraakintunde" target="_blank" rel="noopener">View on GitHub</a>
-          </div>
-          <p class="small">Tip: I can share a 2–3 minute recruiter walkthrough if requested.</p>
         </div>
       </div>
     </section>
 
-    
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p>Selected projects focused on security monitoring, risk analytics, and applied ML.</p>
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="section-title">
+        <h3>Projects</h3>
+        <p>Selected applied AI, agent systems, and security/risk engineering work</p>
+      </div>
 
-      <div class="cards">
+      <div class="grid cols3">
         <div class="card">
-          <div class="titleRow">
-            <h3>Enterprise Risk Intelligence Engine</h3>
-            <span class="tag">AI + Risk</span>
-          </div>
-          <p class="sub">
-            Converts raw logs into KRIs, anomaly estimates, a risk score, and a narrative report built to support monitoring teams and governance workflows.
+          <h4>Public Sector AI Platform (Multi-Agent Demo)</h4>
+          <p>
+            Multi-agent platform skeleton for workflow automation: routing, retrieval patterns, audit layers, and guardrails.
+            Backend-first structure with CI foundations.
           </p>
-          <ul>
-            <li>CSV ingestion → scoring pipeline → narrative report</li>
-            <li>Collaboration with Busayo Odukoya (Technology Risk)</li>
-            <li>Deployed demo for recruiters to test</li>
-          </ul>
+          <div class="meta">
+            <span class="tag">Agents</span>
+            <span class="tag">Guardrails</span>
+            <span class="tag">FastAPI</span>
+          </div>
           <div class="links">
-            <a class="btn primary" href="https://enterprise-risk-intelligence-engine.onrender.com" target="_blank" rel="noopener">Live Demo</a>
-            <a class="btn" href="https://github.com/akinyeraakintunde/enterprise-risk-intelligence-engine" target="_blank" rel="noopener">Repo</a>
+            <a class="link" href="https://github.com/akinyeraakintunde/public-sector-ai-platform" target="_blank" rel="noreferrer">Repository</a>
           </div>
         </div>
 
         <div class="card">
-          <div class="titleRow">
-            <h3>Network Intrusion Detection (ML)</h3>
-            <span class="tag">Cyber ML</span>
-          </div>
-          <p class="sub">
-            ML-based approach to classify/flag suspicious network activity patterns and support analyst review.
+          <h4>Network Intrusion Detection (ML)</h4>
+          <p>
+            IDS-style ML pipeline packaged in an engineering-first structure. Focus on reproducibility, evaluation,
+            and monitoring-aligned interpretation.
           </p>
+          <div class="meta">
+            <span class="tag">Security ML</span>
+            <span class="tag">Evaluation</span>
+            <span class="tag">Pipeline</span>
+          </div>
           <div class="links">
-            <a class="btn" href="https://github.com/akinyeraakintunde/network-intrusion-detection-ml" target="_blank" rel="noopener">Repo</a>
+            <a class="link" href="https://github.com/akinyeraakintunde/network-intrusion-detection-ml" target="_blank" rel="noreferrer">Repository</a>
           </div>
         </div>
 
         <div class="card">
-          <div class="titleRow">
-            <h3>Applied Risk Dashboards & Narratives</h3>
-            <span class="tag">Reporting</span>
-          </div>
-          <p class="sub">
-            Practical reporting templates: risk summaries, incident notes, and executive-friendly narratives.
+          <h4>Twitter Topic Classifier (NLP)</h4>
+          <p>
+            NLP classification pipeline (TF-IDF + ML) with structured preprocessing, evaluation, and reproducible workflow.
           </p>
+          <div class="meta">
+            <span class="tag">NLP</span>
+            <span class="tag">TF-IDF</span>
+            <span class="tag">Classification</span>
+          </div>
           <div class="links">
-            <a class="btn" href="https://github.com/akinyeraakintunde" target="_blank" rel="noopener">See Repos</a>
+            <a class="link" href="https://github.com/akinyeraakintunde" target="_blank" rel="noreferrer">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="note" style="margin-top:14px;">
+        <strong>Design principle:</strong> I prioritise systems that are demoable, testable, and explainable — with clean API
+        contracts and outputs suitable for both technical and non-technical stakeholders.
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="section-title">
+        <h3>Experience & Credibility</h3>
+        <p>Applied work in regulated, risk-aware environments</p>
+      </div>
+
+      <div class="grid cols2">
+        <div class="card">
+          <h4>Cybersecurity & Compliance (Connected Health, Belfast)</h4>
+          <p>
+            Contributed to Cyber Essentials PLUS assurance activities through patch compliance support, secure configuration tasks,
+            vulnerability management, and audit evidence preparation.
+          </p>
+          <div class="meta">
+            <span class="tag">Cyber Essentials PLUS</span>
+            <span class="tag">Audit Evidence</span>
+            <span class="tag">Secure Config</span>
+            <span class="tag">Vuln Mgmt</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Founder & Technical Lead (NxtAbroad Limited)</h4>
+          <p>
+            Founder of a digital-first education and travel consultancy, leading technical development of internal systems for
+            workflow automation, decision support, and operational analytics across UK/Nigeria contexts.
+          </p>
+          <div class="meta">
+            <span class="tag">Leadership</span>
+            <span class="tag">Applied AI</span>
+            <span class="tag">Operations</span>
+            <span class="tag">Automation</span>
           </div>
         </div>
       </div>
     </section>
 
-    
-    <section id="about" class="section">
-      <h2>About</h2>
-      <div class="card">
-        <p class="lead" style="margin:0">
-          I’m Ibrahim Akinyera I work at the intersection of <b>cybersecurity monitoring</b>, <b>IT risk</b>, and <b>applied ML</b>.
-          I enjoy the investigation side: validating alerts, building timelines, separating noise from signal, and writing clear escalation notes.
-        </p>
-        <div class="divider"></div>
-        <p class="small" style="margin:0">
-          My goal: build tools that help teams move from “too many alerts” to “clear decisions”.
-        </p>
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-title">
+        <h3>Contact</h3>
+        <p>For roles, collaboration, or a demo walkthrough</p>
       </div>
-    </section>
-
-  
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <p>Tools and strengths I use to deliver end-to-end projects (build → deploy → document).</p>
-
-      <div class="cards">
-        <div class="card">
-          <h3 style="margin:0 0 8px">Security / Monitoring</h3>
-          <ul>
-            <li>Event/log triage and escalation</li>
-            <li>Risk scoring and KRI thinking</li>
-            <li>Incident-style documentation and reporting</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3 style="margin:0 0 8px">Data / ML</h3>
-          <ul>
-            <li>Python (pandas, numpy, sklearn)</li>
-            <li>Anomaly detection concepts</li>
-            <li>Explainable summaries for stakeholders</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3 style="margin:0 0 8px">Build / Deploy</h3>
-          <ul>
-            <li>Streamlit / FastAPI</li>
-            <li>Render deployment</li>
-            <li>GitHub workflows + documentation</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-  
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>If you’re hiring for security monitoring, risk analytics, or applied ML, I’m open to interviews.</p>
 
       <div class="card">
+        <p style="margin:0 0 10px;">
+          If you want a quick walkthrough of any demo, send a message with the role/team context and I’ll share a short, structured overview.
+        </p>
         <div class="links">
-          
-          <a class="btn primary" href="mailto:info@nxtabroad.com">Email Me</a>
-          <a class="btn" href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noopener">Message on LinkedIn</a>
-          <a class="btn" href="https://github.com/akinyeraakintunde" target="_blank" rel="noopener">GitHub</a>
+          <a class="link" href="mailto:akinyeraakintunde@gmail.com">akinyeraakintunde@gmail.com</a>
+          <a class="link" href="https://www.linkedin.com/in/ibrahimakinyera" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="link" href="https://github.com/akinyeraakintunde" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="link" href="https://nxtabroad-ai-demo.onrender.com/docs" target="_blank" rel="noreferrer">NxtAbroad AI Demo</a>
+          <a class="link" href="https://enterprise-risk-intelligence-engine.onrender.com" target="_blank" rel="noreferrer">Risk Engine Demo</a>
         </div>
-
-        <div class="divider"></div>
-
-        <p class="small" style="margin:0">
-          Quick note for recruiters: I can walk you through the live demo and explain the scoring approach,
-          trade-offs, and how I’d adapt it to your monitoring environment.
-        </p>
-      </div>
-
-      <div class="footer">
-        © <span id="year"></span> Ibrahim Akinyera • Built with GitHub Pages
       </div>
     </section>
+
+    <footer>
+      © <span id="y"></span> Ibrahim Akintunde Akinyera · Built for clarity, credibility, and live demonstrations.
+    </footer>
   </div>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
